@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/Button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const links = [
     { name: "Services", to: "/services" },
@@ -27,15 +28,20 @@ export function Navigation() {
         </div>
 
         <nav className="hidden md:flex md:flex-1 justify-center gap-6 lg:gap-8">
-          {links.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className="text-sm font-medium text-brand-text/80 transition-colors hover:text-brand-text whitespace-nowrap"
-            >
-              {link.name}
-            </Link>
-          ))}
+          {links.map((link) => {
+            const isActive = location.pathname.startsWith(link.to);
+            return (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`text-sm font-medium transition-colors whitespace-nowrap ${
+                  isActive ? "text-brand-purple font-semibold" : "text-brand-text/80 hover:text-brand-text"
+                }`}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="hidden md:flex md:flex-1 items-center justify-end gap-4">
@@ -56,16 +62,21 @@ export function Navigation() {
       {isOpen && (
         <div className="md:hidden border-t border-brand-grey/50 bg-brand-bg px-6 py-4">
           <nav className="flex flex-col space-y-4">
-            {links.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="text-base font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ))}
+            {links.map((link) => {
+              const isActive = location.pathname.startsWith(link.to);
+              return (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`text-base font-medium ${
+                    isActive ? "text-brand-purple" : ""
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
             <div className="pt-4 flex flex-col gap-2">
               <Link to="/contact" onClick={() => setIsOpen(false)}>
                 <Button className="w-full">Book Strategy Call</Button>

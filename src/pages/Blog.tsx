@@ -144,8 +144,8 @@ export default function Blog() {
                 <div className={`self-start px-4 py-1.5 rounded-full text-xs font-bold mb-6 ${post.color} group-hover:bg-white/20 group-hover:text-white transition-all`}>
                   {post.category}
                 </div>
-                <h2 className="text-2xl font-bold mb-4">{post.title}</h2>
-                <p className="text-brand-text/70 group-hover:text-white/70 mb-8 flex-grow">{post.excerpt}</p>
+                <h2 className="text-2xl font-bold mb-4 text-brand-text group-hover:text-white transition-colors">{post.title}</h2>
+                <p className="text-brand-text/70 group-hover:text-white/80 mb-8 flex-grow transition-colors">{post.excerpt}</p>
                 <div className="flex items-center justify-between mt-auto pt-6 border-t border-brand-grey group-hover:border-white/10">
                   <div className="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-brand-text/50 group-hover:text-white/50">
                     <span>{post.date}</span>
