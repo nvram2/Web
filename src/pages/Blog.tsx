@@ -1,8 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
+import { useEffect, useState } from "react";
+import { sanityClient } from "../lib/sanity";
+import groq from "groq";
 
-export const blogPosts = [
+export const fallbackBlogPosts = [
   {
     slug: "ai-automation-scaling-operations-2026",
     title: "How to Scale Business Operations with AI Automation in 2026",
@@ -114,6 +117,46 @@ export const blogPosts = [
 ];
 
 export default function Blog() {
+  const [posts, setPosts] = useState<any[]>(fallbackBlogPosts);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const query = groq`*[_type == "post"] | order(publishedAt desc) {
+          _id,
+          title,
+          "slug": slug.current,
+          excerpt,
+          "category": category->title,
+          publishedAt,
+          readTime,
+          content
+        }`;
+        
+        const sanityPosts = await sanityClient.fetch(query);
+        
+        if (sanityPosts && sanityPosts.length > 0) {
+          // Map sanity format to UI format, fallbacking some color properties or date formatting
+          const mappedPosts = sanityPosts.map((p: any) => ({
+            ...p,
+            date: p.publishedAt ? new Date(p.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : 'Recent',
+            color: "bg-brand-purple/10 text-brand-purple", // you can dynamically set this based on category if needed
+          }));
+          setPosts(mappedPosts);
+        } else {
+          setPosts(fallbackBlogPosts);
+        }
+      } catch (error) {
+        console.error("Failed to fetch from Sanity, using fallback:", error);
+        setPosts(fallbackBlogPosts);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPosts();
+  }, []);
   return (
     <>
       <Helmet>
@@ -139,7 +182,7 @@ export default function Blog() {
       <div className="py-24 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {blogPosts.map((post) => (
+            {posts.map((post) => (
               <Link to={`/blog/${post.slug}`} key={post.slug} className="group flex flex-col h-full bg-brand-bg rounded-[2rem] p-8 hover:bg-[#111] hover:text-white transition-all duration-300">
                 <div className={`self-start px-4 py-1.5 rounded-full text-xs font-bold mb-6 ${post.color} group-hover:bg-white/20 group-hover:text-white transition-all`}>
                   {post.category}
