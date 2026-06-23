@@ -181,8 +181,8 @@ export default function Home() {
               <div className="relative z-10 flex flex-col h-full">
                 <div className="mb-auto">
                   <span className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-semibold mb-6 group-hover:bg-white/20 transition-colors">UAE Insurance</span>
-                  <h3 className="text-2xl font-bold mb-4">Scaling organic traffic and lead generation</h3>
-                  <p className="text-brand-text/70 group-hover:text-white/70 mb-8 max-w-md">SEO strategy, content marketing, and technical optimization leading to massive growth across GCC markets.</p>
+                  <h3 className="text-2xl font-bold mb-4 text-brand-text group-hover:text-white transition-colors">Scaling organic traffic and lead generation</h3>
+                  <p className="text-brand-text/70 group-hover:text-white/80 mb-8 max-w-md transition-colors">SEO strategy, content marketing, and technical optimization leading to massive growth across GCC markets.</p>
                 </div>
                 <div className="grid grid-cols-2 gap-4 pt-8 border-t border-brand-text/10 group-hover:border-white/20">
                   <div>
@@ -201,8 +201,8 @@ export default function Home() {
               <div className="relative z-10 flex flex-col h-full">
                 <div className="mb-auto">
                   <span className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-semibold mb-6 group-hover:bg-white/20 transition-colors">Web 3 Gaming Platform</span>
-                  <h3 className="text-2xl font-bold mb-4">Scaling a blockchain gaming ecosystem</h3>
-                  <p className="text-brand-text/70 group-hover:text-white/70 mb-8 max-w-md">Product leadership, growth systems, tokenomics, and marketplace development.</p>
+                  <h3 className="text-2xl font-bold mb-4 text-brand-text group-hover:text-white transition-colors">Scaling a blockchain gaming ecosystem</h3>
+                  <p className="text-brand-text/70 group-hover:text-white/80 mb-8 max-w-md transition-colors">Product leadership, growth systems, tokenomics, and marketplace development.</p>
                 </div>
                 <div className="grid grid-cols-2 gap-4 pt-8 border-t border-brand-text/10 group-hover:border-white/20">
                   <div>

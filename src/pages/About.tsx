@@ -164,11 +164,11 @@ export default function About() {
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center text-sm font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-lime mr-3"></span>
-                  Product Lead with 10+ years experience
+                  Product Leader with 10+ years experience
                 </li>
                 <li className="flex items-center text-sm font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-lime mr-3"></span>
-                  Scaled products to 3M+ users
+                  Scaled products from 0 to 1M+ users
                 </li>
                 <li className="flex items-center text-sm font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-lime mr-3"></span>
@@ -176,12 +176,12 @@ export default function About() {
                 </li>
                 <li className="flex items-center text-sm font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-lime mr-3"></span>
-                  2 Time Key Note Speaker at IGDC
+                  2X Key Note Speaker at IGDC
                 </li>
               </ul>
               
               <Link to="/contact">
-                <Button variant="outline" className="full-width-btn bg-white text-brand-text hover:bg-brand-bg px-8">Connect with Kevin</Button>
+                <Button variant="outline" className="w-full bg-white hover:bg-brand-text hover:text-white px-8 transition-colors">Connect with Kevin</Button>
               </Link>
             </div>
           </div>
