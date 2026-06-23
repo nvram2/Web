@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://madlabs.digital/sitemap.xml
