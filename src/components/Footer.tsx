@@ -43,13 +43,13 @@ export function Footer() {
               </ul>
             </div>
 
-            <div>
+            <div className="col-span-2 lg:col-span-1">
               <h3 className="font-semibold text-brand-text">Grow With Us</h3>
               <p className="mt-6 text-sm text-brand-text/70 mb-4">
                 Get a free AI readiness assessment or website audit.
               </p>
-              <Link to="/contact?type=audit">
-                <Button variant="secondary" className="w-full">
+              <Link to="/contact?type=audit" className="block w-full sm:w-auto sm:inline-block">
+                <Button variant="secondary" className="w-full sm:w-auto">
                   Get Free Audit <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>

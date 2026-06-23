@@ -27,7 +27,7 @@ export function Navigation() {
           </Link>
         </div>
 
-        <nav className="hidden md:flex md:flex-1 justify-center gap-6 lg:gap-8">
+        <nav className="hidden lg:flex lg:flex-1 justify-center gap-6 lg:gap-8">
           {links.map((link) => {
             const isActive = location.pathname.startsWith(link.to);
             return (
@@ -44,14 +44,14 @@ export function Navigation() {
           })}
         </nav>
 
-        <div className="hidden md:flex md:flex-1 items-center justify-end gap-4">
+        <div className="hidden lg:flex lg:flex-1 items-center justify-end gap-4">
         
           <Link to="/contact">
             <Button>Book Strategy Call</Button>
           </Link>
         </div>
         <button
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -60,7 +60,7 @@ export function Navigation() {
       
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden border-t border-brand-grey/50 bg-brand-bg px-6 py-4">
+        <div className="lg:hidden border-t border-brand-grey/50 bg-brand-bg px-6 py-4">
           <nav className="flex flex-col space-y-4">
             {links.map((link) => {
               const isActive = location.pathname.startsWith(link.to);
