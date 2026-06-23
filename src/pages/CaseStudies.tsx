@@ -97,7 +97,7 @@ export default function CaseStudies() {
         <meta name="description" content="Discover how Madlabs Digital helps businesses like GIG Gulf and CropBytes scale through AI, SEO, and product strategy." />
       </Helmet>
 
-      <div className="pt-24 pb-16 bg-brand-bg">
+      <div className="pt-24 pb-16 bg-brand-bg border-b border-brand-grey">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-2xl">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl mb-6">Proven Growth.</h1>

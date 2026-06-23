@@ -96,9 +96,9 @@ export default function Industries() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {industries.map((ind) => (
-              <div key={ind.slug} className={`flex flex-col bg-gradient-to-br ${ind.color} p-8 rounded-3xl border border-brand-grey hover:border-brand-purple/30 transition-all`}>
-                <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center mb-6 shadow-sm">
-                  <ind.icon className="w-6 h-6 text-brand-text" />
+              <div key={ind.slug} className="bg-white group flex flex-col p-8 rounded-3xl border border-brand-grey hover:border-brand-purple/30 hover:shadow-xl hover:shadow-brand-purple/5 transition-all">
+                <div className="w-12 h-12 rounded-2xl bg-brand-bg flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-lime transition-all">
+                  <ind.icon className="w-6 h-6 text-brand-text group-hover:text-brand-dark transition-colors" />
                 </div>
                 <h3 className="text-2xl font-bold mb-3">{ind.name}</h3>
                 <p className="text-brand-text/70 text-sm leading-relaxed mb-8 flex-grow">

@@ -96,9 +96,9 @@ export default function Services() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
             {allServices.map((service, idx) => (
-              <div id={service.slug} key={idx} className="flex flex-col border border-brand-grey rounded-3xl p-8 lg:p-10 hover:shadow-xl transition-all hover:border-brand-purple/20 scroll-mt-32">
-                <div className="w-14 h-14 rounded-2xl bg-brand-bg flex items-center justify-center mb-8">
-                  <service.icon className="w-7 h-7 text-brand-text" />
+              <div id={service.slug} key={idx} className="group flex flex-col bg-white border border-brand-grey rounded-3xl p-8 lg:p-10 hover:border-brand-purple/30 hover:shadow-xl hover:shadow-brand-purple/5 transition-all scroll-mt-32">
+                <div className="w-14 h-14 rounded-2xl bg-brand-bg flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-brand-lime transition-all">
+                  <service.icon className="w-7 h-7 text-brand-text group-hover:text-brand-dark transition-colors" />
                 </div>
                 <h2 className="text-2xl font-bold mb-4">{service.title}</h2>
                 <p className="text-brand-text/70 mb-8 max-w-md">{service.desc}</p>

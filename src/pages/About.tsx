@@ -42,21 +42,25 @@ export default function About() {
         <link rel="canonical" href="https://madlabs.digital/about" />
       </Helmet>
 
-      <div className="pt-24 pb-32 bg-white">
+      <div className="pt-24 pb-16 bg-brand-bg border-b border-brand-grey">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="max-w-3xl mb-16">
+          <div className="max-w-3xl">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl mb-6">Built for growth. <br/><span className="text-brand-purple">Engineered for scale.</span></h1>
             <p className="text-xl text-brand-text/70 leading-relaxed">
               Madlabs Digital is a founder-led technology consulting company helping startups, SMEs, enterprises, and Web3 businesses build, automate, and grow.
             </p>
           </div>
+        </div>
+      </div>
 
-          <div className="max-w-3xl">
+      <div className="py-24 bg-white border-b border-brand-grey">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Our Philosophy</h2>
-            <p className="text-brand-text/80 leading-relaxed mb-6">
+            <p className="text-lg text-brand-text/80 leading-relaxed mb-6">
               We believe that technology should be an enabler, not a bottleneck. We combine strategy, technology, AI, automation, product development, SEO, and growth consulting under one roof. 
             </p>
-            <p className="text-brand-text/80 leading-relaxed">
+            <p className="text-lg text-brand-text/80 leading-relaxed">
               Our focus is completely outcome-driven. We're not here to just write code or ship features; we partner with you to reduce manual work, generate qualified leads, and significantly increase your revenue.
             </p>
           </div>
@@ -137,9 +141,9 @@ export default function About() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teams.map((team, index) => (
-              <div key={index} className={`flex flex-col bg-gradient-to-br ${team.color} p-8 rounded-3xl border border-brand-grey hover:border-brand-purple/30 transition-all`}>
-                <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center mb-6 shadow-sm">
-                  <team.icon className="w-6 h-6 text-brand-text" />
+              <div key={index} className="bg-white group flex flex-col p-8 rounded-3xl border border-brand-grey hover:border-brand-purple/30 hover:shadow-xl hover:shadow-brand-purple/5 transition-all">
+                <div className="w-12 h-12 rounded-2xl bg-brand-bg flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-lime transition-all">
+                  <team.icon className="w-6 h-6 text-brand-text group-hover:text-brand-dark transition-colors" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{team.name}</h3>
                 <p className="text-brand-text/70 text-sm leading-relaxed mb-8 flex-grow">
@@ -181,7 +185,7 @@ export default function About() {
               </ul>
               
               <Link to="/contact">
-                <Button variant="outline" className="w-full bg-white hover:bg-brand-text hover:text-white px-8 transition-colors">Connect with Kevin</Button>
+                <Button variant="outline" className="w-full bg-white px-8">Connect with Kevin</Button>
               </Link>
             </div>
           </div>

@@ -148,7 +148,7 @@ export default function Home() {
                 className="bg-white p-8 rounded-3xl border border-brand-grey hover:border-brand-purple/30 hover:shadow-xl hover:shadow-brand-purple/5 transition-all group"
               >
                 <div className="w-12 h-12 rounded-2xl bg-brand-bg flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-lime transition-all">
-                  <service.icon className="w-6 h-6" />
+                  <service.icon className="w-6 h-6 text-brand-text group-hover:text-brand-dark transition-colors" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                 <p className="text-brand-text/70 text-sm leading-relaxed mb-6">
@@ -166,25 +166,25 @@ export default function Home() {
       {/* Featured Case Studies */}
       <section className="py-24 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="flex justify-between items-end mb-16">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-6 mb-16">
             <div className="max-w-2xl">
               <h2 className="text-3xl font-bold tracking-tight sm:text-5xl mb-4">Proven Results.</h2>
               <p className="text-lg text-brand-text/70">Real numbers from real businesses we've helped scale.</p>
             </div>
-            <Link to="/case-studies" className="hidden sm:inline-flex items-center font-semibold hover:text-brand-purple transition-colors">
+            <Link to="/case-studies" className="inline-flex items-center font-semibold hover:text-brand-purple transition-colors">
               View all cases <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <Link to="/case-studies/uae-insurance" className="group relative rounded-3xl bg-brand-bg p-8 hover:bg-[#111] hover:text-white transition-colors duration-500 overflow-hidden cursor-pointer block">
+            <Link to="/case-studies/uae-insurance" className="group relative rounded-3xl bg-brand-bg p-8 hover:bg-[#111] hover:text-white transition-colors duration-500 overflow-hidden cursor-pointer flex flex-col h-full">
               <div className="relative z-10 flex flex-col h-full">
                 <div className="mb-auto">
                   <span className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-semibold mb-6 group-hover:bg-white/20 transition-colors">UAE Insurance</span>
                   <h3 className="text-2xl font-bold mb-4 text-brand-text group-hover:text-white transition-colors">Scaling organic traffic and lead generation</h3>
                   <p className="text-brand-text/70 group-hover:text-white/80 mb-8 max-w-md transition-colors">SEO strategy, content marketing, and technical optimization leading to massive growth across GCC markets.</p>
                 </div>
-                <div className="grid grid-cols-2 gap-4 pt-8 border-t border-brand-text/10 group-hover:border-white/20">
+                <div className="grid grid-cols-2 gap-4 pt-8 border-t border-brand-text/10 group-hover:border-white/20 mb-8">
                   <div>
                     <p className="text-3xl font-bold text-brand-purple group-hover:text-brand-lime mb-1">$1M+</p>
                     <p className="text-xs font-medium uppercase tracking-wider opacity-70">Organic Revenue</p>
@@ -194,17 +194,22 @@ export default function Home() {
                     <p className="text-xs font-medium uppercase tracking-wider opacity-70">Organic Clicks</p>
                   </div>
                 </div>
+                <div className="mt-auto">
+                  <span className="inline-flex items-center font-semibold text-brand-text group-hover:text-brand-lime transition-colors">
+                    Read full case study <ArrowRight className="ml-2 w-4 h-4" />
+                  </span>
+                </div>
               </div>
             </Link>
 
-            <Link to="/case-studies/web3-gaming" className="group relative rounded-3xl bg-brand-bg p-8 hover:bg-[#111] hover:text-white transition-colors duration-500 overflow-hidden cursor-pointer block">
+            <Link to="/case-studies/web3-gaming" className="group relative rounded-3xl bg-brand-bg p-8 hover:bg-[#111] hover:text-white transition-colors duration-500 overflow-hidden cursor-pointer flex flex-col h-full">
               <div className="relative z-10 flex flex-col h-full">
                 <div className="mb-auto">
                   <span className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-semibold mb-6 group-hover:bg-white/20 transition-colors">Web 3 Gaming Platform</span>
                   <h3 className="text-2xl font-bold mb-4 text-brand-text group-hover:text-white transition-colors">Scaling a blockchain gaming ecosystem</h3>
                   <p className="text-brand-text/70 group-hover:text-white/80 mb-8 max-w-md transition-colors">Product leadership, growth systems, tokenomics, and marketplace development.</p>
                 </div>
-                <div className="grid grid-cols-2 gap-4 pt-8 border-t border-brand-text/10 group-hover:border-white/20">
+                <div className="grid grid-cols-2 gap-4 pt-8 border-t border-brand-text/10 group-hover:border-white/20 mb-8">
                   <div>
                     <p className="text-3xl font-bold text-brand-purple group-hover:text-brand-lime mb-1">700k+</p>
                     <p className="text-xs font-medium uppercase tracking-wider opacity-70">Active Users</p>
@@ -213,6 +218,11 @@ export default function Home() {
                     <p className="text-3xl font-bold text-brand-blue group-hover:text-white mb-1">2x</p>
                     <p className="text-xs font-medium uppercase tracking-wider opacity-70">Revenue Growth</p>
                   </div>
+                </div>
+                <div className="mt-auto">
+                  <span className="inline-flex items-center font-semibold text-brand-text group-hover:text-brand-lime transition-colors">
+                    Read full case study <ArrowRight className="ml-2 w-4 h-4" />
+                  </span>
                 </div>
               </div>
             </Link>

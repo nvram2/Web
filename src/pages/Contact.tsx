@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/Button";
-import { useState } from "react";
+import React, { useState } from "react";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function Contact() {
