@@ -1,28 +1,198 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import { useEffect, useState } from "react";
-import { sanityClient } from "../lib/sanity";
-import groq from "groq";
 
-export const fallbackBlogPosts = [
+export const blogPosts = [
   {
-    slug: "ai-automation-scaling-operations-2026",
-    title: "How to Scale Business Operations with AI Automation in 2026",
-    excerpt: "Discover the actionable ways startups and enterprises are using AI chatbots, workflow automation, and internal tools to 10x their efficiency without adding headcount.",
-    category: "AI Automation",
-    date: "June 15, 2026",
-    readTime: "6 min read",
-    color: "bg-brand-purple/10 text-brand-purple",
-    content: [
-      { type: "h2", text: "The Era of Doing More With Less" },
-      { type: "p", text: "In today's fast-paced digital ecosystem, businesses are constantly seeking ways to optimize their processes. Standardizing on AI automation is no longer just an innovative concept—it is a baseline requirement for staying competitive. Companies that refuse to automate repetitive tasks will find themselves overwhelmed by leaner, faster competitors who use AI correctly." },
-      { type: "h2", text: "Where to Apply AI First" },
-      { type: "p", text: "We recommend starting with the most painful bottlenecks. For many of our clients, this means implementing intelligent AI chatbots for frontline customer support or building internal knowledge bases. Imagine an AI assistant that can instantly retrieve standard operating procedures (SOPs) or client historical data without a human having to dig through SharePoint." },
-      { type: "quote", text: "The goal isn't necessarily to replace humans. The goal is to elevate humans by automating the mundane, allowing them to focus on creativity, strategy, and relationship building." },
-      { type: "h2", text: "Taking the First Step" },
-      { type: "p", text: "The transition can seem daunting, but it doesn't have to require a massive overhaul on day one. We recommend starting with a targeted audit. Map out your team's workflow for a single week and identify all tasks that require zero creative thinking. Those are your prime candidates for automation." }
-    ]
+slug: "ai-automation-scaling-operations-2026",
+title: "How to Scale Business Operations with AI Automation in 2026",
+seoTitle: "How to Scale Business Operations with AI Automation in 2026 | Madlabs Digital",
+metaDescription: "Learn how startups and enterprises are using AI chatbots, workflow automation, CRM systems, and internal AI assistants to scale operations, improve productivity, and reduce costs in 2026.",
+keywords: [
+"AI Automation",
+"Business Automation",
+"Workflow Automation",
+"AI Chatbots",
+"CRM Automation",
+"Digital Transformation",
+"Operational Efficiency"
+],
+excerpt: "Discover the actionable ways startups and enterprises are using AI chatbots, workflow automation, CRM systems, and internal AI tools to increase efficiency, reduce costs, and scale without adding headcount.",
+category: "AI Automation",
+date: "June 15, 2026",
+readTime: "10 min read",
+color: "bg-brand-purple/10 text-brand-purple",
+
+content: [
+
+
+{
+  type: "h2",
+  text: "The Era of Doing More With Less"
+},
+
+{
+  type: "p",
+  text: "Business growth in 2026 is no longer driven by hiring larger teams. The fastest-growing companies are investing in AI automation, workflow optimization, and intelligent business systems that allow them to achieve significantly more with their existing workforce. Whether you are a startup experiencing rapid growth or an enterprise seeking operational efficiency, AI automation has become a competitive necessity."
+},
+
+{
+  type: "p",
+  text: "Organizations across industries are using artificial intelligence to automate repetitive tasks, streamline customer support, improve internal communication, accelerate decision-making, and reduce operational costs. Businesses that fail to adopt automation often struggle with slower response times, rising overheads, and reduced productivity compared to competitors who embrace AI-driven systems."
+},
+
+{
+  type: "p",
+  text: "Research from leading consulting firms continues to show growing AI adoption across industries. Companies generating the highest returns are those integrating AI directly into their daily workflows rather than treating it as a standalone technology initiative."
+},
+
+{
+  type: "h2",
+  text: "Why AI Automation Matters in 2026"
+},
+
+{
+  type: "p",
+  text: "The global business landscape is becoming increasingly competitive. Customers expect faster responses, employees expect better tools, and businesses must operate more efficiently than ever before. AI automation enables organizations to meet these expectations while maintaining profitability and scalability."
+},
+
+{
+  type: "p",
+  text: "Modern automation tools can process information, answer questions, generate reports, manage workflows, and assist employees in real-time. This creates significant productivity gains without requiring additional headcount."
+},
+
+{
+  type: "h2",
+  text: "Where to Apply AI First"
+},
+
+{
+  type: "p",
+  text: "One of the biggest mistakes businesses make is attempting to automate everything at once. The most successful automation projects start by identifying bottlenecks that consume large amounts of time while delivering minimal strategic value. These areas often provide the quickest return on investment."
+},
+
+{
+  type: "p",
+  text: "Customer support is often the best place to begin. AI-powered chatbots can answer frequently asked questions, qualify leads, schedule appointments, and provide 24/7 support. Modern AI assistants can be trained on company-specific information, enabling highly accurate and contextual responses."
+},
+
+{
+  type: "p",
+  text: "Another high-impact opportunity is internal knowledge management. Employees frequently waste valuable time searching through documents, emails, and disconnected systems. An AI-powered knowledge assistant can instantly retrieve standard operating procedures, onboarding documents, project information, and historical records."
+},
+
+{
+  type: "p",
+  text: "Businesses are also automating CRM management, lead qualification, reporting, invoice processing, customer onboarding, proposal generation, and repetitive administrative tasks. When integrated correctly, these systems create a scalable foundation for long-term growth."
+},
+
+{
+  type: "quote",
+  text: "The goal is not to replace people. The goal is to eliminate repetitive work so people can focus on strategy, creativity, customer relationships, and business growth."
+},
+
+{
+  type: "h2",
+  text: "High-Impact AI Automation Opportunities"
+},
+
+{
+  type: "p",
+  text: "The most successful automation initiatives typically focus on four core areas: customer support, sales and CRM processes, operational workflows, and employee productivity."
+},
+
+{
+  type: "p",
+  text: "Customer support automation includes AI chatbots, ticket routing, self-service knowledge bases, and automated responses. These systems improve response times while reducing support workloads."
+},
+
+{
+  type: "p",
+  text: "Sales and CRM automation includes lead qualification, follow-up sequences, pipeline management, reporting, and customer engagement workflows. Businesses can respond to leads faster and reduce opportunities slipping through the cracks."
+},
+
+{
+  type: "p",
+  text: "Operational automation includes approvals, project management workflows, document generation, invoice processing, and internal reporting. These processes often deliver immediate efficiency gains."
+},
+
+{
+  type: "p",
+  text: "Employee productivity automation includes AI assistants, onboarding support, SOP retrieval, meeting summaries, and collaboration tools that help teams work more effectively."
+},
+
+{
+  type: "h2",
+  text: "The ROI of AI Automation"
+},
+
+{
+  type: "p",
+  text: "When implemented correctly, AI automation can significantly improve operational performance. Businesses frequently report faster response times, higher customer satisfaction, lower operational costs, improved employee productivity, and greater scalability."
+},
+
+{
+  type: "p",
+  text: "For example, a sales team spending 20 hours per week manually updating CRM records can reclaim most of that time through workflow automation. Similarly, support teams can use AI assistants to resolve common customer queries instantly while escalating more complex issues to human specialists."
+},
+
+{
+  type: "p",
+  text: "The cumulative impact of these improvements can be substantial, particularly for businesses experiencing rapid growth and increasing operational complexity."
+},
+
+{
+  type: "h2",
+  text: "Taking the First Step"
+},
+
+{
+  type: "p",
+  text: "The transition to AI automation does not require a complete business overhaul. In fact, the most successful implementations often begin with a simple audit of existing processes."
+},
+
+{
+  type: "p",
+  text: "Spend one week documenting recurring tasks performed across your organization. Identify activities that are repetitive, rule-based, prone to human error, or require significant time without creating strategic value."
+},
+
+{
+  type: "p",
+  text: "Questions worth asking include: Which tasks are repetitive? Which activities consume the most time? Which processes generate frequent errors? Where are employees constantly searching for information? Which customer interactions could be automated?"
+},
+
+{
+  type: "p",
+  text: "The answers to these questions often reveal immediate automation opportunities capable of delivering measurable business impact within weeks."
+},
+
+{
+  type: "h2",
+  text: "Building a Future-Ready Business"
+},
+
+{
+  type: "p",
+  text: "AI automation is no longer a future initiative. It is one of the most effective ways to increase productivity, improve customer experiences, reduce costs, and create sustainable competitive advantages."
+},
+
+{
+  type: "p",
+  text: "Organizations that adopt AI strategically today will be better positioned to scale efficiently, respond to market changes, and outperform competitors in the years ahead."
+},
+
+{
+  type: "h2",
+  text: "Next Steps"
+},
+
+{
+  type: "p",
+  text: "If you are exploring AI automation opportunities, start by identifying your largest operational bottlenecks. Focus on high-impact areas where automation can deliver measurable results quickly. Small wins often create the momentum needed for broader digital transformation initiatives."
+},
+
+]
+
   },
   {
     slug: "lead-generation-seo-systems-that-convert",
@@ -117,46 +287,6 @@ export const fallbackBlogPosts = [
 ];
 
 export default function Blog() {
-  const [posts, setPosts] = useState<any[]>(fallbackBlogPosts);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const query = groq`*[_type == "post"] | order(publishedAt desc) {
-          _id,
-          title,
-          "slug": slug.current,
-          excerpt,
-          "category": category->title,
-          publishedAt,
-          readTime,
-          content
-        }`;
-        
-        const sanityPosts = await sanityClient.fetch(query);
-        
-        if (sanityPosts && sanityPosts.length > 0) {
-          // Map sanity format to UI format, fallbacking some color properties or date formatting
-          const mappedPosts = sanityPosts.map((p: any) => ({
-            ...p,
-            date: p.publishedAt ? new Date(p.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : 'Recent',
-            color: "bg-brand-purple/10 text-brand-purple", // you can dynamically set this based on category if needed
-          }));
-          setPosts(mappedPosts);
-        } else {
-          setPosts(fallbackBlogPosts);
-        }
-      } catch (error) {
-        console.error("Failed to fetch from Sanity, using fallback:", error);
-        setPosts(fallbackBlogPosts);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchPosts();
-  }, []);
   return (
     <>
       <Helmet>
@@ -182,7 +312,7 @@ export default function Blog() {
       <div className="py-24 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {posts.map((post) => (
+            {blogPosts.map((post) => (
               <Link to={`/blog/${post.slug}`} key={post.slug} className="group flex flex-col h-full bg-brand-bg rounded-[2rem] p-8 hover:bg-[#111] hover:text-white transition-all duration-300">
                 <div className={`self-start px-4 py-1.5 rounded-full text-xs font-bold mb-6 ${post.color} group-hover:bg-white/20 group-hover:text-white transition-all`}>
                   {post.category}

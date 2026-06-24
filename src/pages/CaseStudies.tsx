@@ -95,6 +95,10 @@ export default function CaseStudies() {
       <Helmet>
         <title>Case Studies & Results | Madlabs Digital</title>
         <meta name="description" content="Discover how Madlabs Digital helps businesses like GIG Gulf and CropBytes scale through AI, SEO, and product strategy." />
+        <meta name="keywords" content="Madlabs Case Studies, Tech Consulting Results, SEO Case Study, AI Automation Case Study" />
+        <meta property="og:title" content="Case Studies & Results | Madlabs Digital" />
+        <meta property="og:description" content="Discover how Madlabs Digital helps businesses scale through AI, SEO, and product strategy." />
+        <link rel="canonical" href="https://madlabs.digital/case-studies" />
       </Helmet>
 
       <div className="pt-24 pb-16 bg-brand-bg border-b border-brand-grey">

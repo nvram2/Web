@@ -5,7 +5,11 @@ export default function TermsOfService() {
     <>
       <Helmet>
         <title>Terms of Service | Madlabs Digital</title>
-        <meta name="description" content="Terms of Service for Madlabs Digital." />
+        <meta name="description" content="Terms of Service for Madlabs Digital. Read the terms and conditions governing the use of our services and website." />
+        <meta name="keywords" content="Terms of Service, Terms and Conditions, Madlabs Digital Terms" />
+        <meta property="og:title" content="Terms of Service | Madlabs Digital" />
+        <meta property="og:description" content="Terms of Service for Madlabs Digital." />
+        <link rel="canonical" href="https://madlabs.digital/terms" />
       </Helmet>
 
       <div className="pt-24 pb-32 bg-white">

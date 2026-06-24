@@ -8,6 +8,11 @@ import { HelmetProvider } from 'react-helmet-async';
 import { Layout } from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
+import UAE from './pages/UAE';
+import Dubai from './pages/Dubai';
+import USA from './pages/USA';
+import UK from './pages/UK';
+import EU from './pages/EU';
 import Services from './pages/Services';
 import Industries from './pages/Industries';
 import CaseStudies from './pages/CaseStudies';
@@ -27,6 +32,11 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path="uae" element={<UAE />} />
+            <Route path="dubai" element={<Dubai />} />
+            <Route path="usa" element={<USA />} />
+            <Route path="uk" element={<UK />} />
+            <Route path="eu" element={<EU />} />
             <Route path="services" element={<Services />} />
             <Route path="services/:slug" element={<Services />} />
             <Route path="industries" element={<Industries />} />

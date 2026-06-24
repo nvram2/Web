@@ -5,7 +5,11 @@ export default function PrivacyPolicy() {
     <>
       <Helmet>
         <title>Privacy Policy | Madlabs Digital</title>
-        <meta name="description" content="Privacy Policy for Madlabs Digital." />
+        <meta name="description" content="Privacy Policy for Madlabs Digital. Learn how we handle your data, ensure privacy, and comply with regulations." />
+        <meta name="keywords" content="Privacy Policy, Data Protection, Madlabs Digital Privacy" />
+        <meta property="og:title" content="Privacy Policy | Madlabs Digital" />
+        <meta property="og:description" content="Privacy Policy for Madlabs Digital." />
+        <link rel="canonical" href="https://madlabs.digital/privacy" />
       </Helmet>
 
       <div className="pt-24 pb-32 bg-white">
