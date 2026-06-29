@@ -34,9 +34,9 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Madlabs Digital | AI & Growth Consulting Experts</title>
-        <meta name="description" content="Learn about Madlabs Digital, a founder-led technology consulting company helping startups and enterprises build, automate, and grow." />
-        <meta name="keywords" content="About Madlabs Digital, Technology Consulting, Kevin Sequeira, Growth Agency, Product Development Experts" />
+        <title>About Madlabs Digital | Digital Consulting, AI & Product Experts</title>
+        <meta name="description" content="Learn about Madlabs Digital, a founder-led digital consulting company helping businesses with AI, software development, SEO, product strategy, and digital transformation." />
+        <meta name="keywords" content="Digital Transformation, AI Consulting, Madlabs Digital, Technology Consulting,SEO Experts, Growth Agency, Product Development Experts" />
         <meta property="og:title" content="About Us | Madlabs Digital" />
         <meta property="og:description" content="Built for growth. Engineered for scale. See how we combine strategy, AI, and execution." />
         <link rel="canonical" href="https://madlabs.digital/about" />
@@ -45,9 +45,9 @@ export default function About() {
       <div className="pt-24 pb-16 bg-brand-bg border-b border-brand-grey">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl mb-6">Built for growth. <br/><span className="text-brand-purple">Engineered for scale.</span></h1>
+            <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl mb-6">Built for innovation. <br/><span className="text-brand-purple">Engineered for scale.</span></h1>
             <p className="text-xl text-brand-text/70 leading-relaxed">
-              Madlabs Digital is a founder-led technology consulting company helping startups, SMEs, enterprises, and Web3 businesses build, automate, and grow.
+            Madlabs Digital is a founder-led digital consulting company helping startups, SMEs, enterprises, and Web3 businesses design, develop, and improve digital products, operations, and customer experiences.
             </p>
           </div>
         </div>
@@ -58,10 +58,10 @@ export default function About() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Our Philosophy</h2>
             <p className="text-lg text-brand-text/80 leading-relaxed mb-6">
-              We believe that technology should be an enabler, not a bottleneck. We combine strategy, technology, AI, automation, product development, SEO, and growth consulting under one roof. 
+            We bring together strategy, software engineering, AI, SEO, product development, and digital consulting to solve complex business challenges. We believe technology should simplify operations, improve decision making, and create measurable business value. 
             </p>
             <p className="text-lg text-brand-text/80 leading-relaxed">
-              Our focus is completely outcome-driven. We're not here to just write code or ship features; we partner with you to reduce manual work, generate qualified leads, and significantly increase your revenue.
+            Every engagement starts with understanding your business goals. We then create practical solutions that improve efficiency, strengthen customer acquisition, and support long-term business success.
             </p>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center text-center">
             <div>
               <div className="text-5xl font-black tracking-tight mb-2 text-brand-text">$6.4M+</div>
-              <div className="text-sm font-bold text-brand-text/60 uppercase tracking-wider">Business Value Generated</div>
+              <div className="text-sm font-bold text-brand-text/60 uppercase tracking-wider">Business Value Delivered</div>
             </div>
             <div>
               <div className="text-5xl font-black tracking-tight mb-2 text-brand-text">150+</div>
@@ -94,7 +94,7 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Our Technology Stack</h2>
-            <p className="text-lg text-brand-text/70">A battle-tested selection of modern tools we use to architect scalable and resilient solutions.</p>
+            <p className="text-lg text-brand-text/70">A carefully selected technology stack used to build secure, high-performing software, digital products, and AI powered business systems.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
@@ -114,20 +114,20 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Our Values</h2>
-            <p className="text-lg text-brand-text/70">The principles that guide our work, our team, and our client partnerships.</p>
+            <p className="text-lg text-brand-text/70">The principles that shape every project, partnership, and decision we make.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl border border-brand-grey shadow-sm">
               <h3 className="text-xl font-bold mb-3">Outcome Over Output</h3>
-              <p className="text-brand-text/70">We focus on generating real business value (leads, revenue, saved hours) rather than just delivering features and lines of code.</p>
+              <p className="text-brand-text/70">We measure success through business outcomes, operational improvements, and customer impact rather than simply delivering features.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl border border-brand-grey shadow-sm">
               <h3 className="text-xl font-bold mb-3">Engineering Excellence</h3>
-              <p className="text-brand-text/70">We build robust, scalable architectures that support your long-term growth, not short-term fragile patches.</p>
+              <p className="text-brand-text/70">We design reliable software and scalable digital platforms that continue delivering value as your business evolves.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl border border-brand-grey shadow-sm">
               <h3 className="text-xl font-bold mb-3">Radical Transparency</h3>
-              <p className="text-brand-text/70">We communicate openly about challenges, timelines, and costs. No hidden fees, no jargon, just honest partnership.</p>
+              <p className="text-brand-text/70">Clear communication, realistic timelines, and honest recommendations are central to every client relationship.</p>
             </div>
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Our Dedicated Team</h2>
-            <p className="text-lg text-brand-text/70">A collective of senior engineers, growth strategists, and AI specialists working together.</p>
+            <p className="text-lg text-brand-text/70">A multidisciplinary team of engineers, designers, consultants, and AI specialists working together to solve complex business problems.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teams.map((team, index) => (
@@ -162,7 +162,7 @@ export default function About() {
               <h3 className="text-sm font-bold text-brand-purple uppercase tracking-widest mb-6">The Founder</h3>
               <h2 className="text-3xl font-bold mb-4">Kevin Sequeira</h2>
               <p className="text-brand-text/80 leading-relaxed mb-8">
-                With over a decade of combined experience across technology, product management, growth, and business consulting, Kevin has spent his career building systems that scale.
+                With over a decade of experience across product management, software, digital strategy, and consulting, Kevin has helped businesses launch products, improve operations, and deliver measurable commercial results.
               </p>
               
               <ul className="space-y-4 mb-8">
@@ -176,16 +176,16 @@ export default function About() {
                 </li>
                 <li className="flex items-center text-sm font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-lime mr-3"></span>
-                  Built Web3 products, marketplaces &amp; AI systems
+                  Delivered Web3 platforms, marketplaces, and AI powered applications
                 </li>
                 <li className="flex items-center text-sm font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-lime mr-3"></span>
-                  2X Key Note Speaker at IGDC
+                  Two-time Key Note Speaker at IGDC
                 </li>
               </ul>
               
               <Link to="/contact">
-                <Button variant="outline" className="w-full bg-white px-8">Connect with Kevin</Button>
+                <Button variant="outline" className="w-full bg-white px-8">Book a Consultation</Button>
               </Link>
             </div>
           </div>

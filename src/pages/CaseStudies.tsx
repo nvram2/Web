@@ -93,9 +93,9 @@ export default function CaseStudies() {
   return (
     <>
       <Helmet>
-        <title>Case Studies & Results | Madlabs Digital</title>
-        <meta name="description" content="Discover how Madlabs Digital helps businesses like GIG Gulf and CropBytes scale through AI, SEO, and product strategy." />
-        <meta name="keywords" content="Madlabs Case Studies, Tech Consulting Results, SEO Case Study, AI Automation Case Study" />
+        <title>Case Studies | SEO, AI & Software Development Results | Madlabs Digital</title>
+        <meta name="description" content="Explore how Madlabs Digital helps businesses improve search visibility, automate operations, develop software, and achieve measurable business results across multiple industries." />
+        <meta name="keywords" content=" Case Studies, Tech Consulting Results, SEO Case Study, AI Automation Case Study, Software Development Portfolio, Digital Consulting Projects, Web Development Case Study, Product Consulting" />
         <meta property="og:title" content="Case Studies & Results | Madlabs Digital" />
         <meta property="og:description" content="Discover how Madlabs Digital helps businesses scale through AI, SEO, and product strategy." />
         <link rel="canonical" href="https://madlabs.digital/case-studies" />
@@ -104,9 +104,9 @@ export default function CaseStudies() {
       <div className="pt-24 pb-16 bg-brand-bg border-b border-brand-grey">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-2xl">
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl mb-6">Proven Growth.</h1>
+            <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl mb-6">Proven Results.</h1>
             <p className="text-lg text-brand-text/70 leading-relaxed">
-              We let the numbers speak. Explore how we’ve helped enterprise and Web3 companies scale efficiently.
+              Explore how we've helped businesses improve search visibility, launch products, automate operations, and deliver measurable commercial outcomes across multiple industries.
             </p>
           </div>
         </div>

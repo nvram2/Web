@@ -6,40 +6,40 @@ import { Button } from "@/components/ui/Button";
 const caseStudiesData = {
   "uae-insurance": {
     client: "UAE Insurance",
-    title: "Scaling organic traffic and lead generation",
-    challenge: "Increase organic traffic and lead generation in highly competitive GCC markets without relying purely on paid ads.",
-    strategy: "We audited the entire digital footprint, uncovering critical technical SEO bottlenecks and content gaps. We then built a comprehensive search engine optimization strategy heavily focused on local GCC search intent, structured data, and high-quality informative content.",
-    implementation: "Our team optimized over 200 landing pages, implemented dynamic schema markups, completely rebuilt the site architecture for better crawlability, and launched an expansive content marketing campaign targeted at high-intent insurance keywords.",
+    title: "Increasing organic visibility and qualified enquiries",
+    challenge: "Improve organic search visibility and generate more qualified enquiries across competitive GCC insurance markets without increasing reliance on paid advertising.",
+    strategy: "We began with a complete review of the client's website, search performance, and customer journey. We identified technical SEO issues, content opportunities, and regional search intent before creating a phased optimization strategy focused on long-term visibility.",
+    implementation: "The project included technical SEO improvements, website architecture updates, structured data implementation, optimization of more than 200 landing pages, and an ongoing content strategy targeting high-intent insurance searches.",
     results: [
       { metric: "$1M+", label: "Organic Revenue Generated" },
       { metric: "100k+", label: "Additional Organic Clicks" },
-      { metric: "3x", label: "Growth in Core Markets" },
+      { metric: "3x", label: "Increase in Core Markets" },
     ],
     technology: ["Next.js", "Contentful CMS", "Ahrefs & Semrush Data SDKs", "Google Analytics 4"],
     color: "from-brand-purple/20 to-brand-bg",
-    testimonial: "Madlabs fundamentally transformed how we look at digital growth. Their systems generated predictable revenue we previously thought impossible through organic channels."
+    testimonial: "Madlabs transformed our organic search strategy. Their structured approach delivered consistent visibility, qualified enquiries, and measurable commercial results across multiple GCC markets."
   },
   "web3-gaming": {
     client: "Web 3 Gaming Platform",
-    title: "Scaling a blockchain gaming ecosystem",
-    challenge: "Scale user base and create sustainable tokenomics for a Web3 gaming ecosystem during a highly volatile market cycle.",
-    strategy: "Acted as fractional product leaders. We designed a closed-loop economy that rewarded long-term player engagement rather than short-term speculation. Supported this by completely rebuilding the onboarding funnel to reduce friction for non-crypto users.",
-    implementation: "Developed a robust marketplace, optimized the token launch sequence, integrated social logins paired with native wallet generation, and launched a gamified referral system that drove massive viral growth.",
+    title: "Developing a sustainable Web3 gaming platform",
+    challenge: "Increase player adoption while creating a sustainable token economy for a rapidly evolving Web3 gaming platform.",
+    strategy: "We provided product leadership, redesigned the in-game economy, and improved onboarding to create a balanced ecosystem focused on long-term player engagement instead of short-term speculation.",
+    implementation: "We delivered a marketplace, optimized the token launch, introduced social login with embedded wallets, and launched a referral system that increased player acquisition and engagement.",
     results: [
       { metric: "700k+", label: "Active Users" },
-      { metric: "2x", label: "Revenue Growth" },
+      { metric: "2x", label: "Revenue Increase" },
       { metric: "70%", label: "User Retention" },
     ],
     technology: ["React", "Solidity", "Polygon Network", "Node.js Custom Backend", "Mixpanel Analytics"],
     color: "from-brand-blue/20 to-brand-bg",
-    testimonial: "The product leadership provided by Kevin and his team was instrumental. They didn't just write code; they built the economic models that made our game highly scalable."
+    testimonial: "Kevin and the Madlabs team brought product thinking, technical execution, and tokenomics expertise that helped us launch a sustainable gaming ecosystem."
   },
   "d2c-shoe-brand": {
     client: "D2C Shoe Brand",
-    title: "Scaling e-commerce conversions and retention",
-    challenge: "High cart abandonment rates and escalating customer acquisition costs (CAC) were eating into the brand's margins, slowing down their international expansion.",
-    strategy: "We shifted focus from purely acquiring new traffic to maximizing the value of existing traffic. We proposed a complete redesign of the checkout funnel to remove friction and implemented an AI-driven email retention strategy.",
-    implementation: "Deployed predictive AI models to recommend products based on browsing behavior. Re-architected the Shopify checkout flow for single-page performance and set up highly segmented Klaviyo flows for abandoned carts and post-purchase upselling.",
+    title: "Improving ecommerce conversion and customer retention",
+    challenge: "High cart abandonment and increasing customer acquisition costs were reducing profitability and limiting online sales performance.",
+    strategy: "We focused on improving conversion before increasing traffic by redesigning the checkout experience and implementing personalized customer retention journeys.",
+    implementation: "The solution included AI powered product recommendations, an optimized Shopify checkout, and automated customer journeys for abandoned carts and post-purchase engagement.",
     results: [
       { metric: "210%", label: "Increase in Checkout Conversion" },
       { metric: "40%", label: "Reduction in CAC" },
@@ -47,29 +47,29 @@ const caseStudiesData = {
     ],
     technology: ["Shopify Plus", "Klaviyo", "Predictive AI Models", "React"],
     color: "from-brand-blue/20 to-brand-bg",
-    testimonial: "The changes to our retention flows and abandoned cart sequences alone generated an ROI we didn't expect to see for over a year. Incredible strategic execution."
+    testimonial: "The improvements to our checkout and customer retention delivered results far beyond expectations and created a stronger foundation for continued ecommerce growth."
   },
   "uae-real-estate": {
     client: "Top UAE Real Estate Agency",
-    title: "10x growth in qualified leads for luxury off-plan properties",
-    challenge: "The agency was spending over $50k monthly on paid ads but receiving low-intent, unqualified leads for luxury properties, resulting in low conversion rates and wasted sales time.",
-    strategy: "We moved their reliance away from simple Facebook lead forms to a fully integrated, SEO-optimized properties portal acting as a high-authority magnet for international investors.",
-    implementation: "Developed a custom property browsing portal with multi-lingual SEO architecture (English, Arabic, Russian). We integrated a custom AI-driven WhatsApp chatbot connected directly to HubSpot to instantly qualify and route leads to the correct agents based on language and budget.",
+    title: "10x increase in qualified property enquiries",
+    challenge: "The agency needed better quality property enquiries while reducing wasted advertising spend and improving sales efficiency.",
+    strategy: "We developed a multilingual property platform supported by enterprise SEO and a streamlined customer journey designed for international investors.",
+    implementation: "We launched a multilingual property portal, integrated AI assisted WhatsApp qualification, and connected every enquiry directly with HubSpot for faster routing and follow up.",
     results: [
-      { metric: "10x", label: "Increase in Qualified Leads" },
+      { metric: "10x", label: "Increase in Qualified Enquiries" },
       { metric: "35%", label: "Lower Cost Per Lead" },
       { metric: "$45M+", label: "In Attributed Sales" }
     ],
     technology: ["Next.js", "HubSpot CRM", "WhatsApp Business API", "OpenAI API", "Vercel"],
     color: "from-brand-lime/20 to-brand-bg",
-    testimonial: "Our agents finally have high-quality leads. The automated WhatsApp qualification system completely changed how we handle international investors."
+    testimonial: "The quality of our enquiries improved dramatically, and automated qualification helped our team focus on serious buyers."
   },
   "ecommerce-clothing": {
     client: "Global Clothing Brand",
-    title: "Scaling headless e-commerce architecture",
-    challenge: "The brand's legacy monolithic e-commerce platform crashed consistently during major inventory drops. Furthermore, technical SEO limitations were artificially capping their organic traffic growth for highly competitive apparel keywords.",
-    strategy: "We architected a transition to a composable, headless commerce model. By decoupling the frontend from the Shopify backend, we could strictly control cache invalidation, edge rendering, and SEO metadata at a granular level.",
-    implementation: "Built a high-performance Next.js storefront deployed to Vercel. We integrated a robust Headless CMS (Sanity) for dynamic merchandising, optimized the checkout flow to reduce friction, and implemented structured schema for all products.",
+    title: "Modernizing enterprise ecommerce infrastructure",
+    challenge: "The existing ecommerce platform struggled during peak traffic and limited organic search visibility across competitive product categories.",
+    strategy: "We designed a modern headless commerce architecture that improved performance, SEO control, and customer experience while supporting future platform expansion.",
+    implementation: "The solution included a high performance storefront, headless CMS integration, optimized checkout, structured schema, and improved page rendering across the site.",
     results: [
       { metric: "150%", label: "Increase in Mobile Conversions" },
       { metric: "3x", label: "Faster Page Loads" },
@@ -77,14 +77,14 @@ const caseStudiesData = {
     ],
     technology: ["Next.js", "Shopify Storefront API", "Sanity CMS", "Vercel SDKs"],
     color: "from-brand-lime/20 to-brand-bg",
-    testimonial: "Madlabs gave us an infrastructure that actually supports our growth ambitions. Dropping new collections is no longer stressful; the platform handles the traffic flawlessly."
+    testimonial: "Madlabs delivered an ecommerce platform that performs reliably during peak demand while giving our team greater flexibility and confidence."
   },
   "ai-support-automation": {
     client: "Enterprise SaaS Provider",
-    title: "Automating Tier 1 support tickets with AI",
-    challenge: "As the company's user base scaled past 100,000, the support team became bottlenecked by repetitive password resets and standard configuration queries. Response times dropped drastically, negatively impacting user retention.",
-    strategy: "We audited the previous year of support tickets to identify the highest volume, lowest complexity queries. We then proposed a dual-layer AI strategy: an internal copilot to draft responses for agents, and a user-facing chatbot to intercept queries before they become tickets.",
-    implementation: "Engineered a Retrieval-Augmented Generation (RAG) system utilizing OpenAI's LLMs. We vectorized their entire knowledge base and Zendesk history, deploying a custom conversational interface that securely context-switched based on user permissions.",
+    title: "AI powered customer support automation",
+    challenge: "Growing customer demand created a backlog of repetitive support requests, increasing response times and reducing overall customer satisfaction.",
+    strategy: "We analysed historical support requests and designed an AI strategy combining an internal assistant with a customer facing chatbot to automate repetitive enquiries while supporting support teams.",
+    implementation: "We implemented a Retrieval Augmented Generation system connected to the company's knowledge base, enabling accurate responses, faster resolutions, and secure access to relevant information.",
     results: [
       { metric: "65%", label: "Reduction in Support Volume" },
       { metric: "< 2s", label: "Average Response Time" },
@@ -92,7 +92,7 @@ const caseStudiesData = {
     ],
     technology: ["React", "Python/FastAPI", "OpenAI API", "Pinecone Vector DB", "Zendesk Integration"],
     color: "from-brand-purple/20 to-brand-bg",
-    testimonial: "The AI implementation paid for itself within the first quarter. Our support engineers are happier and finally have the time to help clients with complex, high-value strategic onboarding."
+    testimonial: "The AI platform reduced repetitive work, improved response times, and allowed our support team to focus on complex customer needs."
   }
 };
 
@@ -136,7 +136,7 @@ export default function CaseStudyItem() {
           
           <div className="flex flex-wrap gap-4 pt-8">
             <Link to="/contact">
-              <Button size="lg" className="shadow-lg">Book similar project <ArrowRight className="ml-2 w-5 h-5"/></Button>
+              <Button size="lg" className="shadow-lg">Start Your Project <ArrowRight className="ml-2 w-5 h-5"/></Button>
             </Link>
           </div>
         </div>
@@ -174,7 +174,7 @@ export default function CaseStudyItem() {
 
           <div className="lg:w-[400px]">
             <div className="bg-[#111] rounded-3xl p-10 text-white sticky top-32">
-              <h3 className="text-sm font-semibold text-white/50 uppercase tracking-widest mb-10">Real Results</h3>
+              <h3 className="text-sm font-semibold text-white/50 uppercase tracking-widest mb-10">Project Outcomes</h3>
               <div className="space-y-10 mb-12">
                 {study.results.map((res, i) => (
                   <div key={i}>

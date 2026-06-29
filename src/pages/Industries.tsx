@@ -7,63 +7,63 @@ const industries = [
   {
     name: "Startups",
     icon: Rocket,
-    desc: "Scale fast with lean, automated operations and robust product MVPs designed to attract investment and early users.",
+    desc: "Launch faster with MVP development, product strategy, and scalable technology built for early traction and investor readiness.",
     slug: "startups",
     color: "from-brand-purple/20 to-transparent",
   },
   {
     name: "SaaS",
     icon: Globe2,
-    desc: "Improve user retention, automate onboarding flows, and scale infrastructure to handle exponential user growth.",
+    desc: "Improve customer onboarding, strengthen retention, and build reliable SaaS platforms that support long-term business expansion.",
     slug: "saas",
     color: "from-brand-blue/20 to-transparent",
   },
   {
     name: "Real Estate",
     icon: Building2,
-    desc: "Automate lead capture from property listings, qualify buyers with AI scheduling, and streamline CRM pipelines.",
+    desc: "Capture better property enquiries, automate lead qualification, and connect every opportunity through integrated CRM systems.",
     slug: "real-estate",
     color: "from-brand-lime/20 to-transparent",
   },
   {
     name: "Healthcare",
     icon: Stethoscope,
-    desc: "Secure patient data systems, build HIPAA-compliant portals, and automate appointment scheduling and reminders.",
+    desc: "Develop secure healthcare platforms, patient portals, and automated scheduling systems that improve operational efficiency.",
     slug: "healthcare",
     color: "from-brand-purple/20 to-transparent",
   },
   {
     name: "Education",
     icon: GraduationCap,
-    desc: "Build scalable EdTech platforms, automate student enrollment funnels, and manage alumni relations through smart CRMs.",
+    desc: "Create engaging education platforms, simplify admissions, and manage student relationships through connected digital systems.",
     slug: "education",
     color: "from-brand-blue/20 to-transparent",
   },
   {
     name: "E-commerce",
     icon: ShoppingCart,
-    desc: "Optimize conversion rates, integrate advanced PIMs, automate abandoned cart flows, and scale headless stores.",
+    desc: "Increase online sales with faster ecommerce platforms, conversion optimization, and automated customer engagement.",
     slug: "e-commerce",
     color: "from-brand-lime/20 to-transparent",
   },
   {
     name: "Logistics",
     icon: Truck,
-    desc: "Build tracking dashboards, automate dispatch communications, and implement AI document processing for invoices.",
+    desc: "Improve logistics operations with real time tracking, workflow automation, and intelligent document processing.",
     slug: "logistics",
     color: "from-brand-purple/20 to-transparent",
   },
   {
     name: "Recruitment",
     icon: Users,
-    desc: "Automate candidate screening with AI, speed up client matching, and integrate custom talent ATS portals.",
+    desc: "Simplify hiring with AI assisted screening, applicant tracking, and recruitment platforms that improve hiring efficiency.",
     slug: "recruitment",
     color: "from-brand-blue/20 to-transparent",
   },
   {
     name: "Enterprise",
     icon: Briefcase,
-    desc: "Digital transformation consulting, legacy system modernization, and secure, large-scale custom business applications.",
+    desc: "Modernize legacy systems, improve business operations, and develop secure enterprise software for complex organizations.",
     slug: "enterprise",
     color: "from-brand-lime/20 to-transparent",
   }
@@ -73,9 +73,9 @@ export default function Industries() {
   return (
     <>
       <Helmet>
-        <title>Industries We Serve | Real Estate, SaaS, E-commerce | Madlabs Digital</title>
-        <meta name="description" content="We provide tailored technology, AI automation, and lead generation solutions for Real Estate, SaaS, Healthcare, E-commerce, Logistics, and Enterprise businesses." />
-        <meta name="keywords" content="SaaS Automation, Real Estate Lead Generation, Healthcare IT Consulting, E-commerce Optimization, Enterprise Digital Transformation" />
+        <title>Industries We Serve | Industry Focused Digital Consulting | Madlabs Digital</title>
+        <meta name="description" content="Madlabs Digital delivers industry focused software development, AI consulting, SEO, and automation services for startups, SaaS, healthcare, ecommerce, logistics, real estate, and enterprise businesses." />
+        <meta name="keywords" content="Digital Consulting, AI Consulting, Software Development, Industry Solutions, Business Automation, SEO,SaaS Automation, Real Estate Lead Generation, Healthcare IT Consulting, E-commerce Optimization," />
         <meta property="og:title" content="Industries We Serve | Madlabs Digital" />
         <meta property="og:description" content="Industry-specific growth engines tailored to your market mechanics." />
         <link rel="canonical" href="https://madlabs.digital/industries" />
@@ -84,9 +84,9 @@ export default function Industries() {
       <div className="pt-24 pb-16 bg-brand-bg border-b border-brand-grey">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl mb-6">Industry-specific growth engines.</h1>
+            <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl mb-6">Digital expertise for every industry.</h1>
             <p className="text-lg text-brand-text/70 leading-relaxed">
-              Every industry has unique bottlenecks. We build custom applications, automations, and growth systems tailored to your specific market mechanics.
+              Every industry faces unique operational challenges. We design software, AI solutions, and digital systems tailored to your business goals and customer needs.
             </p>
           </div>
         </div>
@@ -117,12 +117,12 @@ export default function Industries() {
 
       <section className="py-24 bg-brand-bg border-t border-brand-grey">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">Don't see your industry?</h2>
+          <h2 className="text-3xl font-bold mb-6">Need a solution for another industry?</h2>
           <p className="text-brand-text/70 mb-10 text-lg">
-            Technology problems are universal. If you have manual operations or need to scale your lead generation, we can architect a solution.
+            Every business has different challenges. We create tailored software, automation, AI, and digital solutions designed around your specific requirements.
           </p>
           <Link to="/contact?type=audit">
-            <Button size="lg">Get a Custom Assessment</Button>
+            <Button size="lg">Book a Consultation</Button>
           </Link>
         </div>
       </section>

@@ -2,5 +2,4 @@
   "name": "Madlabs Digital",
   "description": "Premium technology consulting and growth agency helping businesses generate leads, automate operations, and scale with AI.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
