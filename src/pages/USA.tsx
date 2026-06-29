@@ -20,31 +20,32 @@ export default function USA() {
       <section className="relative overflow-hidden pt-24 pb-32 lg:pt-36 lg:pb-40">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.6 }}
             className="mx-auto max-w-4xl"
           >
             <div className="mb-8 inline-flex items-center rounded-full border border-brand-grey bg-white/50 px-4 py-1.5 text-sm font-medium">
-              <span className="flex h-2 w-2 rounded-full bg-brand-lime mr-2"></span>
-              Leading Tech & Growth Partner in the US
+              <span className="flex h-2 w-2 rounded-full bg-brand-blue mr-2"></span>
+              Scaling American Enterprises
             </div>
             <h1 className="text-5xl font-extrabold tracking-tight sm:text-7xl mb-8 leading-[1.1]">
-              Build, Automate & <br className="hidden sm:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-blue">Scale in the USA</span>
+              Engineer <br className="hidden sm:block" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-purple">Next-Gen Systems</span>
             </h1>
+            
             <p className="mt-6 text-lg leading-8 text-brand-text/70 max-w-2xl mx-auto">
-              Madlabs Digital helps US businesses generate more leads, automate operations, build better products, and increase revenue through AI, automation, growth systems, and technology solutions.
+              From Silicon Valley startups to Fortune 500s across the USA, we design and deploy AI-driven operations, custom software, and revenue-scaling engines that give you an unfair market advantage.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/contact">
-                <Button size="lg" className="w-full sm:w-auto shadow-lg shadow-brand-lime/20">
-                  Book Strategy Call <ArrowRight className="ml-2 w-5 h-5" />
+                <Button size="lg" className="w-full sm:w-auto whitespace-nowrap shadow-lg shadow-brand-blue/20">
+                  Schedule Discovery <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
               <Link to="/contact?type=audit">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto bg-white">
-                  Get Free Website Audit
+                <Button variant="outline" size="lg" className="w-full sm:w-auto whitespace-nowrap bg-white border-brand-grey">
+                  Request Strategy Audit
                 </Button>
               </Link>
             </div>
@@ -53,8 +54,8 @@ export default function USA() {
         
         {/* Abstract shapes */}
         <div className="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
-          <div className="absolute left-[50%] top-0 -translate-x-[50%] -translate-y-[20%] w-[800px] h-[800px] bg-brand-purple/5 rounded-full blur-3xl opacity-50" />
-          <div className="absolute right-0 bottom-0 translate-x-[20%] translate-y-[20%] w-[600px] h-[600px] bg-brand-blue/5 rounded-full blur-3xl opacity-50" />
+          <div className="absolute left-0 top-[20%] -translate-x-[20%] w-[600px] h-[600px] bg-brand-blue/10 rounded-full blur-3xl opacity-60" />
+          <div className="absolute right-0 bottom-0 translate-x-[30%] translate-y-[10%] w-[700px] h-[700px] bg-brand-purple/5 rounded-full blur-3xl opacity-50" />
         </div>
       </section>
 
@@ -118,20 +119,18 @@ export default function USA() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="flex-1">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6">Why US Businesses Choose Madlabs</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6">Built for the Speed of US Markets</h2>
               <p className="text-lg text-brand-text/70 mb-10 leading-relaxed">
-                We combine Silicon Valley product thinking with deep understanding of the US market. We don't just build software, we build operational scale.
+                We merge Silicon Valley engineering standards with relentless operational execution. We don't just build software, we engineer hyper-scalable growth engines.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
                 {[
-                  "Founder-led consultancy",
-                  "Product-first thinking",
-                  "Faster delivery",
-                  "International experience",
-                  "AI expertise",
-                  "Startup agility",
-                  "Enterprise capability"
+                  "Silicon Valley product standards",
+                  "Rapid deployment cycles",
+                  "US regulatory compliance",
+                  "24/7 autonomous systems",
+                  "Native AI integrations"
                 ].map((highlight, idx) => (
                   <div key={idx} className="flex items-center gap-3">
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-lime/20 flex items-center justify-center">
@@ -142,12 +141,13 @@ export default function USA() {
                 ))}
               </div>
             </div>
-            <div className="flex-1 relative">
+            
+            <div className="flex-1 relative w-full">
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-purple/20 to-brand-blue/20 blur-3xl opacity-50 rounded-[3rem]"></div>
               <div className="relative bg-[#111] rounded-[2rem] p-10 overflow-hidden shadow-2xl border border-brand-grey text-white">
-                <div className="text-4xl font-bold text-brand-lime mb-4">"A strategic partner, not just an agency."</div>
+                <div className="text-4xl font-bold text-brand-lime mb-4">"The execution bandwidth we were missing."</div>
                 <p className="text-white/70 mb-8 text-lg">
-                  Working with teams across the US, we've developed a unique capability to deliver rapid technological innovation while respecting enterprise compliance and local market nuances.
+                  Partnering with high-growth US companies, we inject deep technical capabilities directly into your workflow, transforming operational friction into competitive advantage.
                 </p>
                 <Link to="/case-studies">
                   <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-[#111]">

@@ -17,7 +17,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-6 text-sm text-brand-text/70 leading-relaxed">
-              We help businesses generate more leads, automate operations, build better products, and increase revenue through AI, automation, growth systems, and technology solutions.
+              We help generate real leads, automate operations, build better products, and increase revenue through AI, automation and technology solutions.
             </p>
           </div>
           
@@ -46,17 +46,7 @@ export function Footer() {
             <div>
               <h3 className="font-semibold text-brand-text">Locations</h3>
               <ul className="mt-6 space-y-4">
-                <li className="relative group/uae">
-                  <div className="flex items-center justify-between cursor-pointer">
-                    <Link to="/uae" className="text-sm text-brand-text/70 hover:text-brand-purple transition-colors font-medium flex-grow">UAE</Link>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-text/50 -rotate-90 group-hover/uae:rotate-0 transition-transform"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                  </div>
-                  <div className="absolute left-0 top-full mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover/uae:opacity-100 group-hover/uae:visible transition-all duration-200 z-10">
-                    <div className="py-1">
-                      <Link to="/dubai" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-brand-purple">Dubai</Link>
-                    </div>
-                  </div>
-                </li>
+                <li><Link to="/uae" className="text-sm text-brand-text/70 hover:text-brand-purple transition-colors font-medium">UAE</Link></li>
                 <li><Link to="/usa" className="text-sm text-brand-text/70 hover:text-brand-purple transition-colors font-medium">USA</Link></li>
                 <li><Link to="/uk" className="text-sm text-brand-text/70 hover:text-brand-purple transition-colors font-medium">United Kingdom</Link></li>
                 <li><Link to="/eu" className="text-sm text-brand-text/70 hover:text-brand-purple transition-colors font-medium">Europe</Link></li>

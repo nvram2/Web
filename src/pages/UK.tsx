@@ -17,44 +17,39 @@ export default function UK() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-24 pb-32 lg:pt-36 lg:pb-40">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mx-auto max-w-4xl"
-          >
-            <div className="mb-8 inline-flex items-center rounded-full border border-brand-grey bg-white/50 px-4 py-1.5 text-sm font-medium">
-              <span className="flex h-2 w-2 rounded-full bg-brand-lime mr-2"></span>
-              Leading Tech & Growth Partner in the UK
-            </div>
-            <h1 className="text-5xl font-extrabold tracking-tight sm:text-7xl mb-8 leading-[1.1]">
-              Build, Automate & <br className="hidden sm:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-blue">Scale in the UK</span>
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-brand-text/70 max-w-2xl mx-auto">
-              Madlabs Digital helps UK businesses generate more leads, automate operations, build better products, and increase revenue through AI, automation, growth systems, and technology solutions.
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/contact">
-                <Button size="lg" className="w-full sm:w-auto shadow-lg shadow-brand-lime/20">
-                  Book Strategy Call <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-              </Link>
-              <Link to="/contact?type=audit">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto bg-white">
-                  Get Free Website Audit
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-        
-        {/* Abstract shapes */}
-        <div className="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
-          <div className="absolute left-[50%] top-0 -translate-x-[50%] -translate-y-[20%] w-[800px] h-[800px] bg-brand-purple/5 rounded-full blur-3xl opacity-50" />
-          <div className="absolute right-0 bottom-0 translate-x-[20%] translate-y-[20%] w-[600px] h-[600px] bg-brand-blue/5 rounded-full blur-3xl opacity-50" />
+      <section className="relative pt-20 pb-24 lg:pt-28 lg:pb-32 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="relative rounded-[3rem] border border-brand-grey bg-white/50 backdrop-blur-sm overflow-hidden px-6 py-20 sm:px-16 sm:py-28 lg:px-24">
+            <div className="absolute inset-0 bg-gradient-to-b from-brand-purple/5 to-transparent -z-10" />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="mx-auto max-w-3xl text-center relative z-10"
+            >
+              <div className="mb-8 inline-flex items-center rounded-full border border-brand-purple/20 bg-brand-purple/5 px-4 py-1.5 text-sm font-medium text-brand-purple">
+                Empowering British Enterprises
+              </div>
+              <h1 className="text-5xl font-extrabold tracking-tight sm:text-7xl mb-8 leading-[1.1] text-brand-dark">
+                Intelligent Systems for <br className="hidden sm:block" />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-[#111]">UK Market Leaders</span>
+              </h1>
+              <p className="mt-6 text-xl leading-8 text-brand-text/70">
+                From London fintechs to nationwide retail, we deploy custom AI solutions and bespoke software designed to modernise operations, elevate efficiency, and drive sustainable revenue growth.
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link to="/contact">
+                  <Button size="lg" className="w-full sm:w-auto shadow-lg shadow-brand-purple/20 bg-brand-purple hover:bg-brand-purple/90 text-white">
+                    Consult Our Experts <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                </Link>
+              </div>
+            </motion.div>
+            
+            {/* Abstract shapes inside card */}
+            <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[500px] h-[500px] bg-brand-blue/10 rounded-full blur-3xl opacity-50 pointer-events-none" />
+            <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[500px] h-[500px] bg-brand-purple/10 rounded-full blur-3xl opacity-50 pointer-events-none" />
+          </div>
         </div>
       </section>
 
@@ -114,44 +109,43 @@ export default function UK() {
       </section>
 
       {/* Why UK Businesses Choose Madlabs */}
-      <section className="py-24 bg-white border-y border-brand-grey">
+      <section className="py-24 bg-brand-bg relative border-t border-brand-grey">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-16 items-center">
+          <div className="flex flex-col lg:flex-row-reverse gap-16 items-center">
             <div className="flex-1">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6">Why UK Businesses Choose Madlabs</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6">Engineered for the British Economy</h2>
               <p className="text-lg text-brand-text/70 mb-10 leading-relaxed">
-                We combine Silicon Valley product thinking with deep understanding of the UK market. We don't just build software, we build operational scale.
+                We bring global engineering excellence to the UK, helping traditional industries digitise and modern tech companies scale without accumulating technical debt.
               </p>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+              <div className="space-y-6">
                 {[
-                  "Founder-led consultancy",
-                  "Product-first thinking",
-                  "Faster delivery",
-                  "International experience",
-                  "AI expertise",
-                  "Startup agility",
-                  "Enterprise capability"
+                  { title: "GDPR Compliant By Default", desc: "Security and data sovereignty integrated from day one." },
+                  { title: "Legacy System Modernisation", desc: "Bridging the gap between old infrastructure and new AI capabilities." },
+                  { title: "Bespoke Automation", desc: "Custom workflows tailored to unique organisational structures." }
                 ].map((highlight, idx) => (
-                  <div key={idx} className="flex items-center gap-3">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-lime/20 flex items-center justify-center">
-                      <CheckCircle2 className="w-4 h-4 text-brand-dark" />
+                  <div key={idx} className="flex gap-4 items-start">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-brand-purple/10 flex items-center justify-center mt-1">
+                      <CheckCircle2 className="w-5 h-5 text-brand-purple" />
                     </div>
-                    <span className="font-semibold text-brand-text">{highlight}</span>
+                    <div>
+                      <h4 className="font-bold text-brand-dark">{highlight.title}</h4>
+                      <p className="text-brand-text/70 text-sm mt-1">{highlight.desc}</p>
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="flex-1 relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-brand-purple/20 to-brand-blue/20 blur-3xl opacity-50 rounded-[3rem]"></div>
-              <div className="relative bg-[#111] rounded-[2rem] p-10 overflow-hidden shadow-2xl border border-brand-grey text-white">
-                <div className="text-4xl font-bold text-brand-lime mb-4">"A strategic partner, not just an agency."</div>
-                <p className="text-white/70 mb-8 text-lg">
-                  Working with teams across the UK, we've developed a unique capability to deliver rapid technological innovation while respecting enterprise compliance and local market nuances.
+            <div className="flex-1 relative w-full">
+              <div className="relative bg-white rounded-3xl p-10 overflow-hidden shadow-lg border border-brand-grey/50">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-brand-blue/10 rounded-bl-full -z-10" />
+                <div className="text-3xl font-bold text-[#111] mb-6 leading-tight">"They didn't just write code, they transformed how we operate."</div>
+                <p className="text-brand-text/70 mb-8 text-lg">
+                  Our UK partners value our ability to translate complex business challenges into elegant, scalable digital solutions that deliver measurable ROI from day one.
                 </p>
                 <Link to="/case-studies">
-                  <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-[#111]">
-                    View Our Results
+                  <Button variant="default" className="bg-[#111] text-white hover:bg-[#222]">
+                    See Our Impact
                   </Button>
                 </Link>
               </div>

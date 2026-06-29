@@ -76,7 +76,7 @@ export default function Home() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-blue">Scale Your Business</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-brand-text/70 max-w-2xl mx-auto">
-              Madlabs Digital helps businesses generate more leads, automate operations, build better products, and increase revenue through AI, automation, growth systems, and technology solutions.
+              Madlabs Digital helps businesses generate real leads, automate operations, and increase revenue through AI, automation, and technology solutions.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/contact">
@@ -104,7 +104,7 @@ export default function Home() {
       <section className="border-y border-brand-grey bg-white py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold uppercase tracking-wider text-brand-text/50 mb-8">
-            Delivering measurable growth for ambitious teams
+            Delivering measurable growth since 2024
           </p>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4 items-center justify-center text-center">
             <div>
@@ -180,7 +180,7 @@ export default function Home() {
             <Link to="/case-studies/uae-insurance" className="group relative rounded-3xl bg-brand-bg p-8 hover:bg-[#111] hover:text-white transition-colors duration-500 overflow-hidden cursor-pointer flex flex-col h-full">
               <div className="relative z-10 flex flex-col h-full">
                 <div className="mb-auto">
-                  <span className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-semibold mb-6 group-hover:bg-white/20 transition-colors">UAE Insurance</span>
+                  <span className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-semibold mb-6 group-hover:bg-white/20 transition-colors">Insurance Conglomerate UAE</span>
                   <h3 className="text-2xl font-bold mb-4 text-brand-text group-hover:text-white transition-colors">Scaling organic traffic and lead generation</h3>
                   <p className="text-brand-text/70 group-hover:text-white/80 mb-8 max-w-md transition-colors">SEO strategy, content marketing, and technical optimization leading to massive growth across GCC markets.</p>
                 </div>
@@ -212,7 +212,7 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-4 pt-8 border-t border-brand-text/10 group-hover:border-white/20 mb-8">
                   <div>
                     <p className="text-3xl font-bold text-brand-purple group-hover:text-brand-lime mb-1">700k+</p>
-                    <p className="text-xs font-medium uppercase tracking-wider opacity-70">Active Users</p>
+                    <p className="text-xs font-medium uppercase tracking-wider opacity-70">Users Acquired</p>
                   </div>
                   <div>
                     <p className="text-3xl font-bold text-brand-blue group-hover:text-white mb-1">2x</p>
@@ -256,14 +256,21 @@ export default function Home() {
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-brand-grey">
               <h3 className="text-xl font-bold mb-3">Do you work with international clients?</h3>
               <p className="text-brand-text/70 leading-relaxed">
-                Yes, we work with ambitious teams and enterprise clients globally, with strong footprints in the UAE, GCC markets, and North America.
+                Yes, we work with business, startups and enterprise clients globally, with strong footprints in the UAE, EU, and North America.
               </p>
             </div>
             
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-brand-grey">
               <h3 className="text-xl font-bold mb-3">How long does a typical project take?</h3>
               <p className="text-brand-text/70 leading-relaxed">
-                A typical implementation can take anywhere from 2 to 12 weeks, depending on whether it's a focused AI chatbot deployment or a full-scale digital product build.
+                A typical implementation can take anywhere from 2 to 12 weeks, depending on whether it's a focused AI chatbot deployment or a full-scale digital product build. We also work on long term projects based on business objectives
+              </p>
+            </div>
+            
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-brand-grey">
+              <h3 className="text-xl font-bold mb-3">What's different between Madlabs and a Marketing agency?</h3>
+              <p className="text-brand-text/70 leading-relaxed">
+                Madlabs is not a marketing agency. We work on creating longterm product value and higher user satisfaction rather than short-term marketing led spikes.
               </p>
             </div>
           </div>

@@ -12,39 +12,39 @@ export default function EU() {
         <meta name="description" content="Madlabs Digital helps European businesses scale with AI automation, SEO lead generation, CRM implementation, and custom software development across the EU." />
         <meta name="keywords" content="AI Automation EU, Lead Generation Europe, Growth Consulting EU, Web Development Europe, SEO Agency EU, Custom Software Europe, Madlabs Digital EU" />
         <meta property="og:title" content="Madlabs Digital | AI Automation & Growth Consulting in Europe" />
-        <meta property="og:description" content="Scale your European business operations and revenue with our AI automation and lead generation systems." />
+        <meta property="og:description" content="Scale you business with our automation and lead generation systems." />
         <link rel="canonical" href="https://madlabs.digital/eu" />
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-24 pb-32 lg:pt-36 lg:pb-40">
+      <section className="relative overflow-hidden pt-28 pb-36 lg:pt-40 lg:pb-48 bg-[#0a0a0a] text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mx-auto max-w-4xl"
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="mx-auto max-w-5xl"
           >
-            <div className="mb-8 inline-flex items-center rounded-full border border-brand-grey bg-white/50 px-4 py-1.5 text-sm font-medium">
-              <span className="flex h-2 w-2 rounded-full bg-brand-lime mr-2"></span>
-              Leading Tech & Growth Partner in Europe
+            <div className="mb-8 inline-flex items-center rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-sm font-medium">
+              <span className="flex h-2 w-2 rounded-full bg-brand-blue mr-2"></span>
+              Driving Digital Excellence Across the EU
             </div>
-            <h1 className="text-5xl font-extrabold tracking-tight sm:text-7xl mb-8 leading-[1.1]">
-              Build, Automate & <br className="hidden sm:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-blue">Scale in Europe</span>
+            <h1 className="text-5xl font-extrabold tracking-tight sm:text-8xl mb-8 leading-[1] text-white">
+              Architecting <br className="hidden sm:block" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-br from-brand-blue via-brand-purple to-white">European Scale.</span>
             </h1>
-            <p className="mt-6 text-lg leading-8 text-brand-text/70 max-w-2xl mx-auto">
-              Madlabs Digital helps European businesses generate more leads, automate operations, build better products, and increase revenue through AI, automation, growth systems, and technology solutions.
+            <p className="mt-8 text-xl leading-8 text-white/70 max-w-3xl mx-auto font-light">
+              We engineer borderless automation ecosystems, AI integrations, and localized growth systems for the Europe's most ambitious companies.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
               <Link to="/contact">
-                <Button size="lg" className="w-full sm:w-auto shadow-lg shadow-brand-lime/20">
-                  Book Strategy Call <ArrowRight className="ml-2 w-5 h-5" />
+                <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg bg-white text-[#0a0a0a] hover:bg-white/90">
+                  Book a Call <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
               <Link to="/contact?type=audit">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto bg-white">
-                  Get Free Website Audit
+                <Button variant="outline" size="lg" className="w-full sm:w-auto h-14 px-8 text-lg border-white/20 text-white hover:bg-white hover:text-[#0a0a0a]">
+                  Get Free Assessment
                 </Button>
               </Link>
             </div>
@@ -53,8 +53,7 @@ export default function EU() {
         
         {/* Abstract shapes */}
         <div className="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
-          <div className="absolute left-[50%] top-0 -translate-x-[50%] -translate-y-[20%] w-[800px] h-[800px] bg-brand-purple/5 rounded-full blur-3xl opacity-50" />
-          <div className="absolute right-0 bottom-0 translate-x-[20%] translate-y-[20%] w-[600px] h-[600px] bg-brand-blue/5 rounded-full blur-3xl opacity-50" />
+          <div className="absolute left-[50%] top-1/2 -translate-x-[50%] -translate-y-1/2 w-[1000px] h-[500px] bg-brand-blue/20 rounded-[100%] blur-[120px] opacity-60" />
         </div>
       </section>
 
@@ -118,20 +117,19 @@ export default function EU() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="flex-1">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6">Why EU Businesses Choose Madlabs</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6">Mastering European Complexity</h2>
               <p className="text-lg text-brand-text/70 mb-10 leading-relaxed">
-                We combine Silicon Valley product thinking with deep understanding of the European market. We don't just build software, we build operational scale.
+                We combine Silicon Valley product velocity with a deep understanding of European compliance, building software that grows your operational footprint natively.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
                 {[
-                  "Founder-led consultancy",
-                  "Product-first thinking",
-                  "Faster delivery",
-                  "International experience",
-                  "AI expertise",
-                  "Startup agility",
-                  "Enterprise capability"
+                  "Cross-border infrastructure",
+                  "Strict GDPR adherence",
+                  "Multi-regional SEO strategies",
+                  "Cultural nuance adaptation",
+                  "Enterprise AI deployments",
+                  "High-availability architecture"
                 ].map((highlight, idx) => (
                   <div key={idx} className="flex items-center gap-3">
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-lime/20 flex items-center justify-center">
@@ -142,12 +140,13 @@ export default function EU() {
                 ))}
               </div>
             </div>
-            <div className="flex-1 relative">
+            
+            <div className="flex-1 relative w-full">
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-purple/20 to-brand-blue/20 blur-3xl opacity-50 rounded-[3rem]"></div>
               <div className="relative bg-[#111] rounded-[2rem] p-10 overflow-hidden shadow-2xl border border-brand-grey text-white">
-                <div className="text-4xl font-bold text-brand-lime mb-4">"A strategic partner, not just an agency."</div>
+                <div className="text-4xl font-bold text-brand-lime mb-4">"Borderless innovation, flawless execution."</div>
                 <p className="text-white/70 mb-8 text-lg">
-                  Working with teams across Europe, we've developed a unique capability to deliver rapid technological innovation while respecting enterprise compliance and local market nuances.
+                  Navigating the fragmented European market demands systems that adapt. We build architectures that scale seamlessly across borders, languages, and regulatory frameworks.
                 </p>
                 <Link to="/case-studies">
                   <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-[#111]">
