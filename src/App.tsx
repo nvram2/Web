@@ -14,6 +14,13 @@ import USA from './pages/USA';
 import UK from './pages/UK';
 import EU from './pages/EU';
 import Services from './pages/Services';
+import AIAutomation from './pages/services/AIAutomation';
+import LeadGeneration from './pages/services/LeadGeneration';
+import CRMSystems from './pages/services/CRMSystems';
+import ProductDevelopment from './pages/services/ProductDevelopment';
+import WebDevelopment from './pages/services/WebDevelopment';
+import DigitalConsulting from './pages/services/DigitalConsulting';
+import BlockchainWeb3 from './pages/services/BlockchainWeb3';
 import Industries from './pages/Industries';
 import CaseStudies from './pages/CaseStudies';
 import CaseStudyItem from './pages/CaseStudyItem';
@@ -37,6 +44,13 @@ export default function App() {
             <Route path="usa" element={<USA />} />
             <Route path="uk" element={<UK />} />
             <Route path="eu" element={<EU />} />
+            <Route path="services/ai-automation" element={<AIAutomation />} />
+            <Route path="services/lead-generation" element={<LeadGeneration />} />
+            <Route path="services/crm-systems" element={<CRMSystems />} />
+            <Route path="services/product-development" element={<ProductDevelopment />} />
+            <Route path="services/web-development" element={<WebDevelopment />} />
+            <Route path="services/digital-consulting" element={<DigitalConsulting />} />
+            <Route path="services/blockchain-web3" element={<BlockchainWeb3 />} />
             <Route path="services" element={<Services />} />
             <Route path="services/:slug" element={<Services />} />
             <Route path="industries" element={<Industries />} />

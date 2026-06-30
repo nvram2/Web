@@ -36,9 +36,9 @@ const allServices = [
   {
     slug: "web-development",
     title: "Web Development",
-    desc: "Develop fast, secure, SEO-ready websites, eCommerce stores, and custom web applications with Analytics that convert visitors into customers.",
-    items: ["Next.js & React", "Headless CMS", "E-commerce", "Corporate Websites", "Performance Optimization"],
-    icon: ArrowUpRight,
+    desc: "Build high-performance, scalable business websites and headless ecommerce platforms optimized for search and conversion.",
+    items: ["Enterprise Websites", "Headless Ecommerce", "Next.js Apps", "Technical SEO", "Performance Optimization"],
+    icon: Globe,
   },
   {
     slug: "digital-consulting",
@@ -48,10 +48,10 @@ const allServices = [
     icon: BarChart,
   },
   {
-    slug: "blockchain",
+    slug: "blockchain-web3",
     title: "Blockchain & Web3",
-    desc: "Specialist solutions for decentralized ecosystems.",
-    items: ["Smart Contracts", "Tokenomics Design", "Marketplace Development", "Wallet Integration"],
+    desc: "Design and build secure smart contracts, token economies, digital asset platforms, and Web3 products.",
+    items: ["Smart Contracts", "Enterprise Blockchain", "Tokenomics", "NFT Platforms", "Web3 Products"],
     icon: Database,
   }
 ];
@@ -95,26 +95,92 @@ export default function Services() {
       <div className="py-24 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
-            {allServices.map((service, idx) => (
-              <div id={service.slug} key={idx} className="group flex flex-col bg-white border border-brand-grey rounded-3xl p-8 lg:p-10 hover:border-brand-purple/30 hover:shadow-xl hover:shadow-brand-purple/5 transition-all scroll-mt-32">
-                <div className="w-14 h-14 rounded-2xl bg-brand-bg flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-brand-lime transition-all">
-                  <service.icon className="w-7 h-7 text-brand-text group-hover:text-brand-dark transition-colors" />
+            {allServices.map((service, idx) => {
+              const content = (
+                <>
+                  <div className="w-14 h-14 rounded-2xl bg-brand-bg flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-brand-lime transition-all">
+                    <service.icon className="w-7 h-7 text-brand-text group-hover:text-brand-dark transition-colors" />
+                  </div>
+                  <h2 className="text-2xl font-bold mb-4 group-hover:text-brand-purple transition-colors">{service.title}</h2>
+                  <p className="text-brand-text/70 mb-8 max-w-md">{service.desc}</p>
+                  <div className="mt-auto">
+                    <h3 className="text-sm font-semibold uppercase tracking-wider text-brand-text/50 mb-4">Core Offerings</h3>
+                    <ul className="space-y-3">
+                      {service.items.map((item, i) => (
+                        <li key={i} className="flex items-center text-sm font-medium">
+                          <span className="w-1.5 h-1.5 rounded-full bg-brand-lime mr-3"></span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </>
+              );
+
+              const className = "group flex flex-col bg-white border border-brand-grey rounded-3xl p-8 lg:p-10 hover:border-brand-purple/30 hover:shadow-xl hover:shadow-brand-purple/5 transition-all scroll-mt-32 cursor-pointer";
+
+              if (service.slug === "ai-automation") {
+                return (
+                  <Link to="/services/ai-automation" id={service.slug} key={idx} className={className}>
+                    {content}
+                  </Link>
+                );
+              }
+
+              if (service.slug === "lead-generation") {
+                return (
+                  <Link to="/services/lead-generation" id={service.slug} key={idx} className={className}>
+                    {content}
+                  </Link>
+                );
+              }
+
+              if (service.slug === "crm-systems") {
+                return (
+                  <Link to="/services/crm-systems" id={service.slug} key={idx} className={className}>
+                    {content}
+                  </Link>
+                );
+              }
+
+              if (service.slug === "product-development") {
+                return (
+                  <Link to="/services/product-development" id={service.slug} key={idx} className={className}>
+                    {content}
+                  </Link>
+                );
+              }
+
+              if (service.slug === "web-development") {
+                return (
+                  <Link to="/services/web-development" id={service.slug} key={idx} className={className}>
+                    {content}
+                  </Link>
+                );
+              }
+
+              if (service.slug === "digital-consulting") {
+                return (
+                  <Link to="/services/digital-consulting" id={service.slug} key={idx} className={className}>
+                    {content}
+                  </Link>
+                );
+              }
+
+              if (service.slug === "blockchain-web3") {
+                return (
+                  <Link to="/services/blockchain-web3" id={service.slug} key={idx} className={className}>
+                    {content}
+                  </Link>
+                );
+              }
+
+              return (
+                <div id={service.slug} key={idx} className={className}>
+                  {content}
                 </div>
-                <h2 className="text-2xl font-bold mb-4">{service.title}</h2>
-                <p className="text-brand-text/70 mb-8 max-w-md">{service.desc}</p>
-                <div className="mt-auto">
-                  <h3 className="text-sm font-semibold uppercase tracking-wider text-brand-text/50 mb-4">Core Offerings</h3>
-                  <ul className="space-y-3">
-                    {service.items.map((item, i) => (
-                      <li key={i} className="flex items-center text-sm font-medium">
-                        <span className="w-1.5 h-1.5 rounded-full bg-brand-lime mr-3"></span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

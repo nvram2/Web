@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Bot, BarChart, Rocket, Globe, Cog, ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Bot, BarChart, Rocket, Globe, Cog, ArrowUpRight, CheckCircle2, Database } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 
@@ -341,5 +341,11 @@ const services = [
     title: "Digital Consulting",
     desc: "Executive-level product leadership, growth strategy, and digital transformation consulting.",
     icon: BarChart,
+  },
+  {
+    slug: "blockchain-web3",
+    title: "Blockchain & Web3",
+    desc: "Design and build secure smart contracts, token economies, digital asset platforms, and Web3 products.",
+    icon: Database,
   }
 ];

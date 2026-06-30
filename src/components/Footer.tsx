@@ -30,6 +30,8 @@ export function Footer() {
                 <li><Link to="/services/crm-systems" className="text-sm text-brand-text/70 hover:text-brand-purple transition-colors">CRM & Systems</Link></li>
                 <li><Link to="/services/product-development" className="text-sm text-brand-text/70 hover:text-brand-purple transition-colors">Product Dev</Link></li>
                 <li><Link to="/services/web-development" className="text-sm text-brand-text/70 hover:text-brand-purple transition-colors">Web Development</Link></li>
+                <li><Link to="/services/digital-consulting" className="text-sm text-brand-text/70 hover:text-brand-purple transition-colors">Digital Consulting</Link></li>
+                <li><Link to="/services/blockchain-web3" className="text-sm text-brand-text/70 hover:text-brand-purple transition-colors">Blockchain & Web3</Link></li>
               </ul>
             </div>
             
