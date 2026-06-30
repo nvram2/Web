@@ -81,11 +81,11 @@ export default function Services() {
         <link rel="canonical" href="https://madlabs.digital/services" />
       </Helmet>
 
-      <div className="pt-24 pb-16 bg-brand-bg border-b border-brand-grey">
+      <div className="pt-24 pb-16 bg-brand-bg border-b border-brand-grey text-center">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="max-w-2xl">
+          <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl mb-6">Capabilities designed for scalable growth.</h1>
-            <p className="text-lg text-brand-text/70 leading-relaxed">
+            <p className="text-lg text-brand-text/70 leading-relaxed mx-auto">
               We focus on business outcomes, not just technical deliverables. Reduce costs, generate more revenue, and automate your operations.
             </p>
           </div>

@@ -101,11 +101,11 @@ export default function CaseStudies() {
         <link rel="canonical" href="https://madlabs.digital/case-studies" />
       </Helmet>
 
-      <div className="pt-24 pb-16 bg-brand-bg border-b border-brand-grey">
+      <div className="pt-24 pb-16 bg-brand-bg border-b border-brand-grey text-center">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="max-w-2xl">
+          <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl mb-6">Proven Results.</h1>
-            <p className="text-lg text-brand-text/70 leading-relaxed">
+            <p className="text-lg text-brand-text/70 leading-relaxed mx-auto">
               Explore how we've helped businesses improve search visibility, launch products, automate operations, and deliver measurable commercial outcomes across multiple industries.
             </p>
           </div>

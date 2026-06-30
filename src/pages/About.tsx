@@ -42,11 +42,11 @@ export default function About() {
         <link rel="canonical" href="https://madlabs.digital/about" />
       </Helmet>
 
-      <div className="pt-24 pb-16 bg-brand-bg border-b border-brand-grey">
+      <div className="pt-24 pb-16 bg-brand-bg border-b border-brand-grey text-center">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl mb-6">Built for innovation. <br/><span className="text-brand-purple">Engineered for scale.</span></h1>
-            <p className="text-xl text-brand-text/70 leading-relaxed">
+            <p className="text-xl text-brand-text/70 leading-relaxed mx-auto">
             Madlabs Digital is a founder-led digital consulting company helping startups, SMEs, enterprises, and Web3 businesses design, develop, and improve digital products, operations, and customer experiences.
             </p>
           </div>
