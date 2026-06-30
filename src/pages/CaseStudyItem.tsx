@@ -4,96 +4,96 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 const caseStudiesData = {
-  "uae-insurance": {
-    client: "UAE Insurance",
-    title: "Increasing organic visibility and qualified enquiries",
-    challenge: "Improve organic search visibility and generate more qualified enquiries across competitive GCC insurance markets without increasing reliance on paid advertising.",
-    strategy: "We began with a complete review of the client's website, search performance, and customer journey. We identified technical SEO issues, content opportunities, and regional search intent before creating a phased optimization strategy focused on long-term visibility.",
-    implementation: "The project included technical SEO improvements, website architecture updates, structured data implementation, optimization of more than 200 landing pages, and an ongoing content strategy targeting high-intent insurance searches.",
-    results: [
-      { metric: "$1M+", label: "Organic Revenue Generated" },
-      { metric: "100k+", label: "Additional Organic Clicks" },
-      { metric: "3x", label: "Increase in Core Markets" },
-    ],
-    technology: ["Next.js", "Contentful CMS", "Ahrefs & Semrush Data SDKs", "Google Analytics 4"],
-    color: "from-brand-purple/20 to-brand-bg",
-    testimonial: "Madlabs transformed our organic search strategy. Their structured approach delivered consistent visibility, qualified enquiries, and measurable commercial results across multiple GCC markets."
-  },
+   "uae-insurance": {
+  client: "UAE Insurance Conglomerate",
+  title: "Increasing organic visibility and qualified enquiries",
+  challenge: "As a new brand, operating across multiple GCC markets meant competing against established insurers with significant local reach. While paid campaigns consistently generated enquiries, rising acquisition costs and limited organic visibility made long-term growth increasingly expensive. The objective was to improve high-intent organic search performance while generating more qualified enquiries without increasing paid media spend.",
+  strategy: "We conducted a comprehensive SEO and digital performance audit covering technical health, search visibility, customer journeys, competitor positioning, and regional search intent. Based on our findings, we developed a phased growth strategy focused on technical improvements, content expansion, localized optimization, and long-term authority building across key insurance products.",
+  implementation: "The project included resolving technical SEO issues, improving website architecture, implementing structured data, optimizing more than 200 landing pages, strengthening internal linking, enhancing Core Web Vitals, and executing an ongoing content strategy targeting high-intent insurance searches across multiple GCC markets. Performance dashboards were also introduced to continuously monitor rankings, traffic, enquiries, and commercial impact.",
+  results: [
+    { metric: "$1M+", label: "Organic Revenue Generated" },
+    { metric: "100k+", label: "Additional Organic Clicks" },
+    { metric: "3x", label: "Increase in Core Markets" },
+  ],
+  technology: ["Next.js", "Contentful CMS", "Ahrefs & Semrush Data SDKs", "Google Analytics 4"],
+  color: "from-brand-purple/20 to-brand-bg",
+  testimonial: "Madlabs became an extension of our digital team. Their structured SEO strategy delivered over 100k organic clicks and over $1M in organic conversions improvements in visibility, qualified enquiries, and commercial performance across multiple GCC markets."
+},
   "web3-gaming": {
-    client: "Web 3 Gaming Platform",
-    title: "Developing a sustainable Web3 gaming platform",
-    challenge: "Increase player adoption while creating a sustainable token economy for a rapidly evolving Web3 gaming platform.",
-    strategy: "We provided product leadership, redesigned the in-game economy, and improved onboarding to create a balanced ecosystem focused on long-term player engagement instead of short-term speculation.",
-    implementation: "We delivered a marketplace, optimized the token launch, introduced social login with embedded wallets, and launched a referral system that increased player acquisition and engagement.",
-    results: [
-      { metric: "700k+", label: "Active Users" },
-      { metric: "2x", label: "Revenue Increase" },
-      { metric: "70%", label: "User Retention" },
-    ],
-    technology: ["React", "Solidity", "Polygon Network", "Node.js Custom Backend", "Mixpanel Analytics"],
-    color: "from-brand-blue/20 to-brand-bg",
-    testimonial: "Kevin and the Madlabs team brought product thinking, technical execution, and tokenomics expertise that helped us launch a sustainable gaming ecosystem."
-  },
-  "d2c-shoe-brand": {
-    client: "D2C Shoe Brand",
-    title: "Improving ecommerce conversion and customer retention",
-    challenge: "High cart abandonment and increasing customer acquisition costs were reducing profitability and limiting online sales performance.",
-    strategy: "We focused on improving conversion before increasing traffic by redesigning the checkout experience and implementing personalized customer retention journeys.",
-    implementation: "The solution included AI powered product recommendations, an optimized Shopify checkout, and automated customer journeys for abandoned carts and post-purchase engagement.",
-    results: [
-      { metric: "210%", label: "Increase in Checkout Conversion" },
-      { metric: "40%", label: "Reduction in CAC" },
-      { metric: "$1.5M", label: "Additional Monthly Revenue" }
-    ],
-    technology: ["Shopify Plus", "Klaviyo", "Predictive AI Models", "React"],
-    color: "from-brand-blue/20 to-brand-bg",
-    testimonial: "The improvements to our checkout and customer retention delivered results far beyond expectations and created a stronger foundation for continued ecommerce growth."
-  },
-  "uae-real-estate": {
-    client: "Top UAE Real Estate Agency",
-    title: "10x increase in qualified property enquiries",
-    challenge: "The agency needed better quality property enquiries while reducing wasted advertising spend and improving sales efficiency.",
-    strategy: "We developed a multilingual property platform supported by enterprise SEO and a streamlined customer journey designed for international investors.",
-    implementation: "We launched a multilingual property portal, integrated AI assisted WhatsApp qualification, and connected every enquiry directly with HubSpot for faster routing and follow up.",
-    results: [
-      { metric: "10x", label: "Increase in Qualified Enquiries" },
-      { metric: "35%", label: "Lower Cost Per Lead" },
-      { metric: "$45M+", label: "In Attributed Sales" }
-    ],
-    technology: ["Next.js", "HubSpot CRM", "WhatsApp Business API", "OpenAI API", "Vercel"],
-    color: "from-brand-lime/20 to-brand-bg",
-    testimonial: "The quality of our enquiries improved dramatically, and automated qualification helped our team focus on serious buyers."
-  },
-  "ecommerce-clothing": {
-    client: "Global Clothing Brand",
-    title: "Modernizing enterprise ecommerce infrastructure",
-    challenge: "The existing ecommerce platform struggled during peak traffic and limited organic search visibility across competitive product categories.",
-    strategy: "We designed a modern headless commerce architecture that improved performance, SEO control, and customer experience while supporting future platform expansion.",
-    implementation: "The solution included a high performance storefront, headless CMS integration, optimized checkout, structured schema, and improved page rendering across the site.",
-    results: [
-      { metric: "150%", label: "Increase in Mobile Conversions" },
-      { metric: "3x", label: "Faster Page Loads" },
-      { metric: "$2M+", label: "Lift in Annual Revenue" }
-    ],
-    technology: ["Next.js", "Shopify Storefront API", "Sanity CMS", "Vercel SDKs"],
-    color: "from-brand-lime/20 to-brand-bg",
-    testimonial: "Madlabs delivered an ecommerce platform that performs reliably during peak demand while giving our team greater flexibility and confidence."
-  },
-  "ai-support-automation": {
-    client: "Enterprise SaaS Provider",
-    title: "AI powered customer support automation",
-    challenge: "Growing customer demand created a backlog of repetitive support requests, increasing response times and reducing overall customer satisfaction.",
-    strategy: "We analysed historical support requests and designed an AI strategy combining an internal assistant with a customer facing chatbot to automate repetitive enquiries while supporting support teams.",
-    implementation: "We implemented a Retrieval Augmented Generation system connected to the company's knowledge base, enabling accurate responses, faster resolutions, and secure access to relevant information.",
-    results: [
-      { metric: "65%", label: "Reduction in Support Volume" },
-      { metric: "< 2s", label: "Average Response Time" },
-      { metric: "$300k", label: "Annual Cost Savings" }
-    ],
-    technology: ["React", "Python/FastAPI", "OpenAI API", "Pinecone Vector DB", "Zendesk Integration"],
-    color: "from-brand-purple/20 to-brand-bg",
-    testimonial: "The AI platform reduced repetitive work, improved response times, and allowed our support team to focus on complex customer needs."
-  }
+  client: "Web3 Gaming Platform",
+  title: "Developing a sustainable Web3 gaming platform",
+  challenge: "The platform had experienced strong initial user growth but faced the common challenge of balancing player incentives with a sustainable token economy. The goal was to improve long-term engagement, increase player retention, and create an ecosystem capable of supporting continued growth without relying on speculative token activity.",
+  strategy: "Working closely with leadership, we redefined the product roadmap, analysed player behaviour, redesigned the game economy, and introduced product improvements focused on long-term engagement. Every recommendation balanced player experience with sustainable tokenomics and measurable business objectives.",
+  implementation: "The engagement included launching an in-game marketplace, refining token utility, improving onboarding through embedded wallets and social authentication, implementing referral mechanics, introducing new gameplay loops, and optimising live operations using behavioural analytics. The result was a stronger ecosystem designed around player retention rather than short-term speculation.",
+  results: [
+    { metric: "700k+", label: "Active Users" },
+    { metric: "2x", label: "Revenue Increase" },
+    { metric: "70%", label: "User Retention" },
+  ],
+  technology: ["React", "Solidity", "Polygon Network", "Node.js Custom Backend", "Mixpanel Analytics"],
+  color: "from-brand-blue/20 to-brand-bg",
+  testimonial: "Madlabs combined product strategy, technical execution, and deep tokenomics expertise to help us build a scalable Web3 gaming ecosystem focused on sustainable growth."
+},
+"d2c-shoe-brand": {
+  client: "D2C Shoe Brand",
+  title: "Improving ecommerce conversion and customer retention",
+  challenge: "Despite attracting healthy website traffic, the brand experienced high cart abandonment, increasing customer acquisition costs, and inconsistent repeat purchases. Improving conversion efficiency became the priority before increasing marketing spend.",
+  strategy: "We analysed customer behaviour throughout the purchase journey to identify friction points affecting conversion. The strategy focused on simplifying checkout, increasing customer confidence, improving product discovery, and building automated retention journeys that encouraged repeat purchases.",
+  implementation: "The project included checkout optimisation, AI-powered product recommendations, customer segmentation, automated abandoned cart recovery, personalised post-purchase communication, and lifecycle marketing workflows integrated with the ecommerce platform. Continuous A/B testing ensured every improvement was backed by measurable performance data.",
+  results: [
+    { metric: "210%", label: "Increase in Checkout Conversion" },
+    { metric: "40%", label: "Reduction in Acquisition Cost" },
+    { metric: "$50K", label: "Additional Monthly Revenue" }
+  ],
+  technology: ["Shopify Plus", "Klaviyo", "Predictive AI Models", "React"],
+  color: "from-brand-blue/20 to-brand-bg",
+  testimonial: "Madlabs transformed our ecommerce experience by improving conversions, increasing customer retention, and creating a scalable foundation for continued online growth."
+},
+"uae-real-estate": {
+  client: "Top UAE Real Estate Agency",
+  title: "10x increase in qualified property enquiries",
+  challenge: "The agency generated significant enquiry volume through advertising, but lead quality remained inconsistent, creating unnecessary workload for the sales team and increasing acquisition costs. The objective was to attract higher intent buyers while improving the overall customer journey.",
+  strategy: "We designed a multilingual digital experience tailored to international property investors, combining enterprise SEO, conversion-focused UX, CRM automation, and AI-powered lead qualification to maximise enquiry quality rather than simply increasing traffic.",
+  implementation: "The solution included a multilingual property portal, advanced SEO optimisation, AI-assisted WhatsApp qualification, automated enquiry routing through HubSpot, CRM integrations, and performance dashboards providing complete visibility across the sales pipeline from first enquiry to closed opportunity.",
+  results: [
+    { metric: "10x", label: "Increase in Qualified Enquiries" },
+    { metric: "35%", label: "Lower Cost Per Lead" },
+    { metric: "$7M+", label: "In Attributed Sales" }
+  ],
+  technology: ["Next.js", "HubSpot CRM", "WhatsApp Business API", "OpenAI API", "Vercel"],
+  color: "from-brand-lime/20 to-brand-bg",
+  testimonial: "Madlabs completely transformed how we generate and qualify property enquiries. Our sales team now spends more time speaking with serious buyers instead of filtering unqualified leads."
+},
+"ecommerce-clothing": {
+  client: "Global Clothing Brand",
+  title: "Modernizing enterprise ecommerce infrastructure",
+  challenge: "The existing ecommerce platform struggled to deliver consistent performance during peak shopping periods, affecting customer experience, search visibility, and conversion rates. The business required a future-ready architecture capable of supporting international growth.",
+  strategy: "We designed a modern headless commerce solution focused on performance, scalability, SEO flexibility, and improved developer workflows. The strategy balanced technical improvements with customer experience to maximise both organic growth and online sales.",
+  implementation: "The project involved building a high-performance storefront, integrating a headless CMS, improving rendering performance, implementing structured schema, optimising checkout flows, and modernising the frontend architecture while maintaining operational continuity throughout the migration.",
+  results: [
+    { metric: "50%", label: "Increase in Mobile Conversions" },
+    { metric: "3x", label: "Faster Page Loads" },
+    { metric: "$70k+", label: "Lift in Annual Revenue" }
+  ],
+  technology: ["Next.js", "Shopify Storefront API", "Sanity CMS", "Vercel SDKs"],
+  color: "from-brand-lime/20 to-brand-bg",
+  testimonial: "Madlabs delivered a modern ecommerce platform that significantly improved website performance while giving our team greater flexibility to scale and innovate."
+},
+"ai-support-automation": {
+  client: "Enterprise SaaS Provider",
+  title: "AI powered customer support automation",
+  challenge: "Rapid customer growth resulted in increasing support volumes, slower response times, and rising operational costs. Support teams were spending valuable time answering repetitive questions instead of resolving complex customer issues.",
+  strategy: "We analysed historical support conversations, identified automation opportunities, and designed an AI-powered support ecosystem combining Retrieval-Augmented Generation, intelligent routing, and human oversight to improve both customer experience and operational efficiency.",
+  implementation: "The solution included an AI assistant connected to the company's internal knowledge base, secure Retrieval-Augmented Generation architecture, Zendesk integration, semantic search, conversation summarisation, and automated response generation. Human agents remained in control of complex cases while repetitive enquiries were resolved instantly.",
+  results: [
+    { metric: "65%", label: "Reduction in Support Volume" },
+    { metric: "< 2s", label: "Average Response Time" },
+    { metric: "$300k", label: "Annual Cost Savings" }
+  ],
+  technology: ["React", "Python/FastAPI", "OpenAI API", "Pinecone Vector DB", "Zendesk Integration"],
+  color: "from-brand-purple/20 to-brand-bg",
+  testimonial: "The AI platform transformed our customer support operations by reducing repetitive workloads, improving response times, and allowing our specialists to focus on delivering exceptional customer experiences."
+}
 };
 
 export default function CaseStudyItem() {

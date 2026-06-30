@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 const caseStudies = [
   {
     slug: "uae-insurance",
-    client: "UAE Insurance",
-    title: "Scaling organic traffic and lead generation",
-    challenge: "Increase organic traffic and lead generation in highly competitive GCC markets.",
-    solution: "Comprehensive SEO strategy, content marketing, and technical optimization tailored for the region.",
+    client: "UAE Insurance Conglomerate",
+    title: "Increasing organic visibility and qualified enquiries",
+    challenge: "Improve high-intent organic visibility across competitive GCC insurance markets while reducing reliance on paid acquisition.",
+    solution: "Delivered a phased SEO strategy combining technical optimization, localized content, structured data, and performance tracking to drive sustainable long-term growth.",
     results: [
       { metric: "$1M+", label: "Organic Revenue Generated" },
       { metric: "100k+", label: "Additional Organic Clicks" },
@@ -18,11 +18,11 @@ const caseStudies = [
     color: "from-brand-purple/20 to-brand-bg"
   },
   {
-    slug: "web3-gaming",
-    client: "Web 3 Gaming Platform",
-    title: "Scaling a blockchain gaming ecosystem",
-    challenge: "Scale user base and create sustainable tokenomics for a Web3 gaming ecosystem.",
-    solution: "Product leadership, growth systems, tokenomics design & launch, and marketplace development.",
+     slug: "web3-gaming",
+    client: "Web3 Gaming Platform",
+    title: "Developing a sustainable Web3 gaming platform",
+    challenge: "Create a sustainable blockchain gaming ecosystem while increasing player acquisition, engagement, and long-term retention.",
+    solution: "Redesigned the game economy, optimized tokenomics, improved onboarding, and launched marketplace and referral systems that supported sustainable growth.",
     results: [
       { metric: "700k+", label: "Active Users" },
       { metric: "2x", label: "Revenue Growth" },
@@ -34,57 +34,57 @@ const caseStudies = [
   {
     slug: "ecommerce-clothing",
     client: "Global Clothing Brand",
-    title: "Scaling headless e-commerce architecture",
-    challenge: "Platform instability during high-traffic drops and poor SEO performance on product pages.",
-    solution: "Rebuilt the store using a modern headless architecture (Next.js + Shopify) with advanced edge caching and technical SEO foundations.",
+    title: "Modernizing enterprise ecommerce infrastructure",
+    challenge: "Improve website performance, SEO, and customer experience while preparing the platform for future growth.",
+    solution: "Built a modern headless commerce architecture with improved rendering, faster page speeds, optimized checkout, and scalable content management.",
     results: [
-      { metric: "150%", label: "Increase in Mobile Conversions" },
+      { metric: "50%", label: "Increase in Mobile Conversions" },
       { metric: "3x", label: "Faster Page Loads" },
-      { metric: "$2M+", label: "Lift in Annual Revenue" },
+      { metric: "$70k+", label: "Lift in Annual Revenue" },
     ],
-    tags: ["E-commerce", "Web Development", "SEO"],
+    tags: ["Ecommerce", "Web Development", "SEO"],
     color: "from-brand-lime/20 to-brand-bg"
   },
   {
-    slug: "ai-support-automation",
+     slug: "ai-support-automation",
     client: "Enterprise SaaS Provider",
-    title: "Automating Tier 1 support tickets with AI",
-    challenge: "Support teams were overwhelmed by repetitive Tier 1 queries, leading to slow response times and churn.",
-    solution: "Implemented an intelligent RAG-based AI chatbot trained on internal documentation to intercept and resolve common tickets automatically.",
+    title: "AI powered customer support automation",
+    challenge: "Reduce growing support volumes while improving response times and customer satisfaction.",
+    solution: "Implemented an AI-powered support platform using Retrieval-Augmented Generation to automate repetitive enquiries and assist support teams.",
     results: [
       { metric: "65%", label: "Reduction in Support Volume" },
       { metric: "< 2s", label: "Average Response Time" },
       { metric: "$300k", label: "Annual Cost Savings" },
     ],
-    tags: ["AI Automation", "Process Optimization", "SaaS"],
+    tags: ["AI Automation", "Customer Support", "SaaS"],
     color: "from-brand-purple/20 to-brand-bg"
   },
   {
-    slug: "d2c-shoe-brand",
+     slug: "d2c-shoe-brand",
     client: "D2C Shoe Brand",
-    title: "Scaling e-commerce conversions and retention",
-    challenge: "High cart abandonment and high customer acquisition costs.",
-    solution: "Rebuilt e-commerce funnel, integrated AI-driven product recommendations, and optimized email retention flows.",
+    title: "Improving ecommerce conversion and customer retention",
+    challenge: "Reduce cart abandonment and customer acquisition costs while increasing online revenue.",
+    solution: "Optimized the checkout experience, introduced AI-powered product recommendations, and automated customer retention journeys across the ecommerce funnel.",
     results: [
       { metric: "210%", label: "Increase in Checkout Conversion" },
       { metric: "40%", label: "Reduction in CAC" },
-      { metric: "$1.5M", label: "Additional Monthly Revenue" },
+      { metric: "$50K", label: "Additional Monthly Revenue" },
     ],
-    tags: ["E-commerce", "AI Automation", "Conversion Optimization"],
+    tags: ["Ecommerce", "AI Automation", "Conversion Optimization"],
     color: "from-brand-blue/20 to-brand-bg"
   },
   {
-    slug: "uae-real-estate",
+   slug: "uae-real-estate",
     client: "Top UAE Real Estate Agency",
-    title: "10x growth in qualified leads for luxury off-plan properties",
-    challenge: "Low quality leads from paid ads and low conversion rates on landing pages.",
-    solution: "Built a dedicated properties portal, deployed multi-lingual SEO, and automated lead qualification via CRM-integrated AI chatbots.",
+    title: "10x increase in qualified property enquiries",
+    challenge: "Improve enquiry quality while reducing acquisition costs for a highly competitive UAE real estate market.",
+    solution: "Developed a multilingual property platform with enterprise SEO, AI-powered lead qualification, and seamless CRM automation for faster sales follow-up.",
     results: [
-      { metric: "10x", label: "Increase in Qualified Leads" },
+      { metric: "10x", label: "Increase in Qualified Enquiries" },
       { metric: "35%", label: "Lower Cost Per Lead" },
-      { metric: "$45M+", label: "In Attributed Sales" },
+      { metric: "$7M+", label: "In Attributed Sales" },
     ],
-    tags: ["Real Estate", "Lead Generation", "SEO"],
+    tags: ["Real Estate", "Lead Generation", "CRM Automation"],
     color: "from-brand-lime/20 to-brand-bg"
   }
 ];

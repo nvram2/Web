@@ -71,7 +71,7 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center text-center">
             <div>
-              <div className="text-5xl font-black tracking-tight mb-2 text-brand-text">$6.4M+</div>
+              <div className="text-5xl font-black tracking-tight mb-2 text-brand-text">$10.4M+</div>
               <div className="text-sm font-bold text-brand-text/60 uppercase tracking-wider">Business Value Delivered</div>
             </div>
             <div>

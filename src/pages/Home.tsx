@@ -108,7 +108,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4 items-center justify-center text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">$6.4M+</div>
+              <div className="text-4xl font-bold mb-2">$10.4M+</div>
               <div className="text-sm font-medium text-brand-text/70">Business Value Delivered</div>
             </div>
             <div>
