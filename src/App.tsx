@@ -22,6 +22,15 @@ import WebDevelopment from './pages/services/WebDevelopment';
 import DigitalConsulting from './pages/services/DigitalConsulting';
 import BlockchainWeb3 from './pages/services/BlockchainWeb3';
 import Industries from './pages/Industries';
+import Startups from './pages/industries/Startups';
+import SaaS from './pages/industries/SaaS';
+import RealEstate from './pages/industries/RealEstate';
+import Healthcare from './pages/industries/Healthcare';
+import Education from './pages/industries/Education';
+import Ecommerce from './pages/industries/Ecommerce';
+import Logistics from './pages/industries/Logistics';
+import Recruitment from './pages/industries/Recruitment';
+import Enterprise from './pages/industries/Enterprise';
 import CaseStudies from './pages/CaseStudies';
 import CaseStudyItem from './pages/CaseStudyItem';
 import Contact from './pages/Contact';
@@ -54,6 +63,15 @@ export default function App() {
             <Route path="services" element={<Services />} />
             <Route path="services/:slug" element={<Services />} />
             <Route path="industries" element={<Industries />} />
+            <Route path="industries/startups" element={<Startups />} />
+            <Route path="industries/saas" element={<SaaS />} />
+            <Route path="industries/real-estate" element={<RealEstate />} />
+            <Route path="industries/healthcare" element={<Healthcare />} />
+            <Route path="industries/education" element={<Education />} />
+            <Route path="industries/ecommerce" element={<Ecommerce />} />
+            <Route path="industries/logistics" element={<Logistics />} />
+            <Route path="industries/recruitment" element={<Recruitment />} />
+            <Route path="industries/enterprise" element={<Enterprise />} />
             <Route path="case-studies" element={<CaseStudies />} />
             <Route path="case-studies/:slug" element={<CaseStudyItem />} />
             <Route path="blog" element={<Blog />} />

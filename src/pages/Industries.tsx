@@ -43,7 +43,7 @@ const industries = [
     name: "E-commerce",
     icon: ShoppingCart,
     desc: "Increase online sales with faster ecommerce platforms, conversion optimization, and automated customer engagement.",
-    slug: "e-commerce",
+    slug: "ecommerce",
     color: "from-brand-lime/20 to-transparent",
   },
   {
@@ -104,9 +104,9 @@ export default function Industries() {
                 <p className="text-brand-text/70 text-sm leading-relaxed mb-8 flex-grow">
                   {ind.desc}
                 </p>
-                <Link to="/contact">
+                <Link to={["startups", "saas", "real-estate", "healthcare", "education", "ecommerce", "logistics", "recruitment", "enterprise"].includes(ind.slug) ? `/industries/${ind.slug}` : "/contact"}>
                   <Button variant="outline" className="w-full bg-white">
-                    Discuss solutions <ArrowRight className="ml-2 w-4 h-4" />
+                    {["startups", "saas", "real-estate", "healthcare", "education", "ecommerce", "logistics", "recruitment", "enterprise"].includes(ind.slug) ? "View Solutions" : "Discuss solutions"} <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
               </div>
